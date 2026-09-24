@@ -1,0 +1,11 @@
+# Project files and paths.
+.classpath
+.project
+*.iml
+**/*.iml
+.settings/
+bin/
+libs/
+!quickReader/libs/
+gen/
+.idea/

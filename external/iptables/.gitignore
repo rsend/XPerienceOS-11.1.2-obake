@@ -19,6 +19,7 @@ Makefile.in
 /autom4te.cache/
 /build-aux/
 /config.*
+!/config.h
 /configure
 /libtool
 /stamp-h1

@@ -1,5 +1,10 @@
 *.pyc
 *.swp
 blueprint/
-kati/
+kati/*
+!kati/Makefile.ckati
+!kati/*.cc
+!kati/*.h
+kati/*_test.cc
+kati/*_bench.cc
 soong/

@@ -42,3 +42,14 @@ selpolltest
 tokdefs.h
 version.c
 version.h
+
+# Android.mk consumes these pregenerated files directly.
+!bpf/net/
+!bpf/net/bpf_filter.c
+!config.h
+!grammar.c
+!scanner.c
+!scanner.h
+!tokdefs.h
+!version.c
+!version.h

@@ -1,0 +1,17 @@
+.classpath
+.gradle
+.idea
+.name
+.project
+bin
+build
+# Android.mk compiles gen/com/android/deskclock/BuildConfig.java.
+lint.xml
+local.properties
+out
+project.properties
+*.DS_Store
+*~
+*.iml
+*.swo
+*.swp

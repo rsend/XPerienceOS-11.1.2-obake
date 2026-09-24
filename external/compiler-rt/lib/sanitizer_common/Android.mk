@@ -88,7 +88,3 @@ LOCAL_MULTILIB := both
 include $(BUILD_HOST_STATIC_LIBRARY)
 
 endif
-
-ifndef SANITIZE_HOST
-include $(LOCAL_PATH)/tests/Android.mk
-endif

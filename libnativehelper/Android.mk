@@ -108,10 +108,3 @@ LOCAL_LDFLAGS := -ldl
 LOCAL_ADDITIONAL_DEPENDENCIES := $(LOCAL_PATH)/Android.mk
 LOCAL_MULTILIB := both
 include $(BUILD_HOST_STATIC_LIBRARY)
-
-
-#
-# Tests.
-#
-
-include $(LOCAL_PATH)/tests/Android.mk

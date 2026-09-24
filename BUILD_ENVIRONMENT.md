@@ -26,6 +26,9 @@ source ./setup_env.sh rom
 make -j6 systemimage bootimage
 ```
 
+`jack.sh` installs the pinned Jack server into the current user's Jack
+directory on first use, then starts it with the requested memory limit.
+
 For a separate TWRP 3.1.1 recovery build:
 
 ```sh

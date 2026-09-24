@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2012 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License
+  -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="applicationLabel">Ffôn</string>
+    <string name="launcherActivityLabel">Ffôn</string>
+    <string name="launcherDialpadActivityLabel">Pad Deialu Ffôn</string>
+    <string name="dialerIconLabel">Ffôn</string>
+    <string name="callHistoryIconLabel">Hanes galwadau</string>
+    <string name="action_report_number">Rhoi gwybod am rif anghywir</string>
+    <string name="action_copy_number_text">Copïo\'r rhif</string>
+    <string name="copy_transcript_text">Copïo\'r trawsgrifiad</string>
+    <string name="action_block_number">Rhwystro\'r rhif</string>
+    <string name="snackbar_number_blocked">Mae <xliff:g id="number" example="(555) 555-5555">%1$s</xliff:g> wedi ei rwystro</string>
+    <string name="action_unblock_number">Dadrwystro\'r rhif</string>
+    <string name="snackbar_number_unblocked">Mae <xliff:g id="number" example="(555) 555-5555">%1$s</xliff:g> wedi ei ddad-rwystro.</string>
+    <string name="block_number_undo">DADWNEUD</string>
+    <string name="call_details_delete">Dileu</string>
+    <string name="action_edit_number_before_call">Golygu\'r rhif cyn galw</string>
+    <string name="call_log_delete_all">Clirio hanes galwadau</string>
+    <string name="call_log_trash_voicemail">Dileu neges lleisbost</string>
+    <string name="call_log_archive_voicemail">Archifo\'r neges</string>
+    <string name="call_log_share_voicemail">Rhannu neges lleisbost</string>
+    <string name="snackbar_voicemail_deleted">Neges wedi ei dileu</string>
+    <string name="snackbar_voicemail_archived">Neges wedi ei harchifo</string>
+    <string name="snackbar_voicemail_deleted_undo">DADWNEUD</string>
+    <string name="snackbar_voicemail_archived_goto">MYND I\'R ARCHIF</string>
+    <string name="clearCallLogConfirmation_title">Clirio hanes galwadau?</string>
+    <string name="clearCallLogConfirmation">Bydd hyn yn dileu\'r holl alwadau o dy hanes.</string>
+    <string name="clearCallLogProgress_title">Yn clirio hanes galwadau\u2026</string>
+    <string name="userCallActivityLabel" product="default">Ffôn</string>
+    <string name="notification_missedCallTitle">Galwad wedi ei methu</string>
+    <string name="notification_missedWorkCallTitle">Wedi methu galwad gwaith</string>
+    <string name="notification_missedCallsTitle">Galwadau wedi eu methu</string>
+    <string name="notification_missedCallsMsg"><xliff:g id="num_missed_calls">%s</xliff:g> galwad wedi\'u methu</string>
+    <string name="notification_missedCall_call_back">Galw nôl</string>
+    <string name="notification_missedCall_message">Neges</string>
+    <plurals name="notification_voicemail_title">
+        <item quantity="zero"><xliff:g id="count">%1$d</xliff:g> negeseuon lleisbost        </item>
+        <item quantity="one">Neges lleisbost</item>
+        <item quantity="two">            <xliff:g id="count">%1$d</xliff:g> neges lleisbost
+        </item>
+        <item quantity="few">            <xliff:g id="count">%1$d</xliff:g> neges lleisbost
+        </item>
+        <item quantity="many">            <xliff:g id="count">%1$d</xliff:g> neges lleisbost
+        </item>
+        <item quantity="other">            <xliff:g id="count">%1$d</xliff:g> neges lleisbost
+        </item>
+    </plurals>
+    <string name="notification_action_voicemail_play">Chwarae</string>
+    <string name="notification_voicemail_callers_list"><xliff:g id="newer_callers">%1$s</xliff:g>,
+        <xliff:g id="older_caller">%2$s</xliff:g>
+    </string>
+    <string name="notification_new_voicemail_ticker">Neges lleisbost newydd gan <xliff:g id="caller">%1$s</xliff:g>
+    </string>
+    <string name="voicemail_playback_error">Methwyd â chwarae\'r neges lleisbost</string>
+    <string name="voicemail_fetching_content">Yn llwytho lleisbost\u2026</string>
+    <string name="voicemail_archiving_content">Yn archifo\'r neges\u2026</string>
+    <string name="voicemail_fetching_timout">Methwyd â llwytho lleisbost</string>
+    <string name="call_log_voicemail_header">Galwadau gyda lleisbost yn unig</string>
+    <string name="call_log_incoming_header">Galwadau i mewn yn unig</string>
+    <string name="call_log_outgoing_header">Galwadau allan yn unig</string>
+    <string name="call_log_missed_header">Galwadau a methwyd yn unig</string>
+    <string name="visual_voicemail_title">Lleisbost gweledol</string>
+    <string name="visual_voicemail_text">Gweld a gwrando ar dy negesuon llaisbost, heb orfod deialu rhif. Gall fod costau defnydd data.    </string>
+    <string name="visual_voicemail_settings">Gosodiadau</string>
+    <string name="voicemail_status_voicemail_not_available">Diweddariadau lleisbost ddim ar gael</string>
+    <string name="voicemail_status_messages_waiting">Neges lleisbost newydd yn aros. Methu â\'i llwytho ar hyn o bryd.</string>
+    <string name="voicemail_status_configure_voicemail">Gosod dy leisbost</string>
+    <string name="voicemail_status_audio_not_available">Sain ddim ar gael</string>
+    <string name="voicemail_status_action_configure">Gosod</string>
+    <string name="voicemail_status_action_call_server">Galw lleisbost</string>
+    <string name="call_log_item_count_and_date">(<xliff:g id="count">%1$d</xliff:g>)
+        <xliff:g id="date">%2$s</xliff:g>
+    </string>
+    <string name="sms_disambig_title">Dewis rhif</string>
+    <string name="call_disambig_title">Dewis rhif</string>
+    <string name="make_primary">Cofio\'r dewis hwn</string>
+    <string name="description_search_button">chwilio</string>
+    <string name="description_dial_button">deialu</string>
+    <string name="description_digits_edittext">rhif i\'w deialu</string>
+    <string name="description_playback_start_stop">Chwarae neu stopio chwarae</string>
+    <string name="description_playback_speakerphone">Troi\'r seinydd uchel ymlaen neu i ffwrdd</string>
+    <string name="description_playback_seek">Canfod lleoliad chwarae</string>
+    <string name="description_rate_decrease">Arafu cyflymder chwarae</string>
+    <string name="description_rate_increase">Cynyddu cyflymder chwarae</string>
+    <string name="action_menu_call_history_description">Hanes Galwadau</string>
+    <string name="action_menu_overflow_description" msgid="2295659037509008453">Rhagor o ddewisiadau</string>
+    <string name="action_menu_dialpad_button">pad deialu</string>
+    <string name="menu_show_outgoing_only">Dangos mynd allan yn unig</string>
+    <string name="menu_show_incoming_only">Dangos dod i mewn yn unig</string>
+    <string name="menu_show_missed_only">Dangos wedi\'i methu yn unig</string>
+    <string name="menu_show_voicemails_only">Dangos lleisbost yn unig</string>
+    <string name="menu_show_all_calls">Dangos pob galwad</string>
+    <string name="add_2sec_pause">Ychwanegu saib o 2 eiliad</string>
+    <string name="add_wait">Ychwanegu saib</string>
+    <string name="dialer_settings_label">Gosodiadau</string>
+    <string name="menu_newContact">Cyswllt newydd</string>
+    <string name="menu_allContacts">Pob cyswllt</string>
+    <string name="callDetailTitle">Manylion yr alwad</string>
+    <string name="toast_call_detail_error">Manylion ddim ar gael</string>
+    <string name="dialer_useDtmfDialpad">Defnyddio bysellbad tôn cyffwrdd</string>
+    <string name="dialer_returnToInCallScreen">Dychwelyd i\'r galwad</string>
+    <string name="dialer_addAnotherCall">Ychwanegu galwad</string>
+    <string name="type_incoming">Galwad i mewn</string>
+    <string name="type_outgoing">Galwad allan</string>
+    <string name="type_missed">Galwad wedi ei methu</string>
+    <string name="type_incoming_video">Galwad fideo i mewn</string>
+    <string name="type_outgoing_video">Galwad fideo allan</string>
+    <string name="type_missed_video">Galwad fideo wedi\'i methu</string>
+    <string name="type_voicemail">Lleisbost</string>
+    <string name="type_rejected">Galwad wedi\'i gwrthod</string>
+    <string name="type_blocked">Galwad wedi\'i rhwystro</string>
+    <string name="actionIncomingCall">Galwadau i mewn</string>
+    <string name="description_call_log_play_button">Chwarae lleisbost</string>
+    <string name="description_view_contact">Gweld cyswllt <xliff:g id="name">%1$s</xliff:g></string>
+    <string name="description_call">Galw <xliff:g id="name">%1$s</xliff:g></string>
+    <string name="description_contact_details">Gweld manylion cysylltu ar gyfer <xliff:g id="nameOrNumber">%1$s</xliff:g></string>
+    <string name="description_num_calls"><xliff:g id="numberOfCalls">%1$s</xliff:g> galwad.</string>
+    <string name="description_video_call">Galwad fideo.</string>
+    <string name="description_send_text_message">Anfon SMS at <xliff:g id="name">%1$s </xliff:g></string>
+    <string name="description_call_log_unheard_voicemail">Negeseuon lleisbost heb eu clywed</string>
+    <string name="description_start_voice_search">Dechrau chwiliad llais</string>
+    <string name="menu_callNumber">Galw <xliff:g id="number">%s</xliff:g></string>
+    <string name="unknown">Anhysybys</string>
+    <string name="voicemail">Lleisbost</string>
+    <string name="private_num">Rhif preifat</string>
+    <string name="payphone">Ffôn cyhoeddus</string>
+    <string name="callDetailsShortDurationFormat"><xliff:g id="seconds" example="28">%s</xliff:g> eil</string>
+    <string name="callDetailsDurationFormat"><xliff:g id="minutes" example="42">%s</xliff:g> mun <xliff:g id="seconds" example="28">%s</xliff:g> eil</string>
+    <string name="voicemailCallLogToday">@string/call_log_header_today</string>
+    <string name="voicemailCallLogDateTimeFormat"><xliff:g id="date" example="Jul 25, 2014">%1$s</xliff:g> am <xliff:g id="time" example="2:49 PM">%2$s</xliff:g></string>
+    <string name="voicemailDurationFormat"><xliff:g id="minutes" example="10">%1$02d</xliff:g>:<xliff:g id="seconds" example="20">%2$02d</xliff:g></string>
+    <string name="voicemailCallLogDateTimeFormatWithDuration"><xliff:g id="dateAndTime" example="Jul 25, 2014 at 2:49PM">%1$s</xliff:g> \u2022 <xliff:g id="duration" example="01:22">%2$s</xliff:g></string>
+    <string name="dialog_phone_call_prohibited_message" msgid="4313552620858880999">Methu â galw\'r rhif hwn</string>
+    <string name="dialog_voicemail_not_ready_message">I osod y lleisbost, edrycha yn Dewislen &gt; Gosodiadau.</string>
+    <string name="dialog_voicemail_airplane_mode_message">Er mwyn galw dy leisbost, diffodda modd awyren.</string>
+    <string name="contact_list_loading">Yn llwytho\u2026</string>
+    <string name="imei">IMEI</string>
+    <string name="meid">MEID</string>
+    <string name="simContacts_emptyLoading">Yn llwytho o gerdyn SIM\u2026</string>
+    <string name="simContacts_title">Cysylltiadau cerdyn SIM</string>
+    <string name="add_contact_not_available">Dim ap cysylltiadau ar gael</string>
+    <string name="voice_search_not_available">Chwilio llais ddim ar gael</string>
+    <string name="call_not_available">Methu â gwneud galwad ffôn gan fod yr ap Ffôn wedi ei analluogi.</string>
+    <string name="activity_not_available">Dim ap ar gyfer hynny ar y ddyfais hon</string>
+    <string name="dialer_hint_find_contact">Chwilio cysylltiadau</string>
+    <string name="block_number_search_hint">Ychwanegu rif neu chwilio cysylltiadau</string>
+    <string name="call_log_activity_title_font_family">sans-serif-light</string>
+    <string name="view_full_call_history_font_family">sans-serif</string>
+    <string name="call_log_all_empty">Does dim hanes galwadau.</string>
+    <string name="call_log_all_empty_action">Gwneud galwad</string>
+    <string name="call_log_missed_empty">Does dim galwadau wedi eu methu.</string>
+    <string name="call_log_voicemail_empty">Mae dy flwch lleisbost yn wag.</string>
+    <string name="voicemail_archive_empty">Mae dy archif negeseuon llais yn wag.</string>
+    <string name="show_favorites_only">Dangos ffefrynnau yn unig</string>
+    <string name="call_log_activity_title">Hanes Galwadau</string>
+    <string name="voicemail_archive_activity_title">Archif Negeseuon Llais</string>
+    <string name="call_log_all_title">Y cwbl</string>
+    <string name="call_log_missed_title">Wedi\'u methu</string>
+    <string name="call_log_voicemail_title">Lleisbost</string>
+    <string name="migrate_blocked_numbers_dialog_title">Dull rhwystro newydd a mwy syml</string>
+    <string name="migrate_blocked_numbers_dialog_message">I dy warchod yn well, mae ar Ffôn angen newid sut mae rhwystro\'n gweithio. Bydd dy rifau sydd wedi\'u rhwystro nawr yn stopio galwadau a negeseuon testun a bydd hefyd yn bosib eu rhannu gydag apiau eraill.</string>
+    <string name="migrate_blocked_numbers_dialog_allow_button">Caniatáu</string>
+    <string name="block_number_confirmation_title">Rhwystro
+<xliff:g id="number" example="(555) 555-5555">%1$s</xliff:g>?</string>
+    <string name="block_number_confirmation_message_vvm">Caiff galwadau o\'r rhif hwn eu rhwystro a bydd negeseuon llais yn cael eu dileu yn awtomatig.
+    </string>
+    <string name="block_number_confirmation_message_no_vvm">Caiff galwadau o\'r rhif hwn eu rhwystro, ond mi fydd dal yn bosib i\'r galwr adael negeseuon llais.
+    </string>
+    <string name="block_number_confirmation_message_new_filtering">        Ni fyddi bellach yn derbyn galwadau na negeseuon testun o\'r rhif hwn.
+    </string>
+    <string name="block_number_ok">RHWYSTRO</string>
+    <string name="unblock_number_confirmation_title">Dadrwystro
+<xliff:g id="number" example="(555) 555-5555">%1$s</xliff:g>?</string>
+    <string name="unblock_number_ok">DADRWYSTRO</string>
+    <string name="tab_speed_dial">Deialu cyflym</string>
+    <string name="tab_history">Hanes Galwadau</string>
+    <string name="tab_all_contacts">Cysylltiadau</string>
+    <string name="tab_voicemail">Lleisbost</string>
+    <string name="favorite_hidden">Tynnwyd o\'r ffefrynnau</string>
+    <string name="favorite_hidden_undo">Dadwneud</string>
+    <string name="search_shortcut_call_number">Galw
+        <xliff:g id="number">%s</xliff:g>
+    </string>
+    <string name="search_shortcut_create_new_contact">Creu cyswllt newydd</string>
+    <string name="search_shortcut_add_to_contact">Ychwanegu at gyswllt</string>
+    <string name="search_shortcut_send_sms_message">Anfon SMS</string>
+    <string name="search_shortcut_make_video_call">Gwneud galwad fideo</string>
+    <string name="search_shortcut_block_number">Rhwystro\'r rhif</string>
+    <string name="num_missed_calls"><xliff:g id="number">%s</xliff:g> galwad wedi\'i methu</string>
+    <string name="speed_dial_empty">Does neb ar dy restr deialu cyflym</string>
+    <string name="speed_dial_empty_add_favorite_action">Ychwanegu ffefryn</string>
+    <string name="all_contacts_empty">Nid oes gennyt unrhyw gysylltiadau eto</string>
+    <string name="all_contacts_empty_add_contact_action">Ychwanegu cyswllt</string>
+    <string name="contact_tooltip">Cyffyrdda\'r ddelwedd i weld yr holl rifau neu gyffwrdd a dal i\'w aildrefnu</string>
+    <string name="remove_contact">Tynnu</string>
+    <string name="call_log_action_video_call">Galwad fideo</string>
+    <string name="call_log_action_send_message">Anfon neges</string>
+    <string name="call_log_action_details">Manylion yr alwad</string>
+    <string name="call_log_action_call">        Galw <xliff:g id="nameOrNumber" example="John Smith">^1</xliff:g>
+    </string>
+    <string name="description_incoming_missed_call">Galwad wedi ei methu oddi wrth <xliff:g id="nameOrNumber" example="John Smith">^1</xliff:g> wedi\'i methu, <xliff:g id="typeOrLocation" example="Mobile">^2</xliff:g>, <xliff:g id="timeOfCall" example="2 min ago">^3</xliff:g>, <xliff:g id="phoneAccount" example="on SIM 1">^4</xliff:g>.</string>
+    <string name="description_incoming_answered_call">Galwad gan <xliff:g id="nameOrNumber" example="John Smith">^1</xliff:g> wedi\'i ateb, <xliff:g id="typeOrLocation" example="Mobile">^2</xliff:g>, <xliff:g id="timeOfCall" example="2 min ago">^3</xliff:g>, <xliff:g id="phoneAccount" example="on SIM 1">^4</xliff:g>.</string>
+    <string name="description_unread_voicemail">Neges llais heb ei glywed gan <xliff:g id="nameOrNumber" example="John Smith">^1</xliff:g>, <xliff:g id="typeOrLocation" example="Mobile">^2</xliff:g>, <xliff:g id="timeOfCall" example="2 min ago">^3</xliff:g>, <xliff:g id="phoneAccount" example="on SIM 1">^4</xliff:g>.</string>
+    <string name="description_read_voicemail">Neges lleisbost gan <xliff:g id="nameOrNumber" example="John Smith">^1</xliff:g>, <xliff:g id="typeOrLocation" example="Mobile">^2</xliff:g>, <xliff:g id="timeOfCall" example="2 min ago">^3</xliff:g>, <xliff:g id="phoneAccount" example="on SIM 1">^4</xliff:g>.</string>
+    <string name="description_outgoing_call">Galwad i <xliff:g id="nameOrNumber" example="John Smith">^1</xliff:g>, <xliff:g id="typeOrLocation" example="Mobile">^2</xliff:g>, <xliff:g id="timeOfCall" example="2 min ago">^3</xliff:g>, <xliff:g id="phoneAccount" example="on SIM 1">^4</xliff:g>.</string>
+    <string name="description_phone_account">ar <xliff:g id="phoneAccount" example="SIM 1">^1</xliff:g></string>
+    <string name="description_via_number">o <xliff:g id="number" example="(555) 555-5555">%1$s</xliff:g></string>
+    <string name="call_log_via_number">o <xliff:g id="number" example="(555) 555-5555">%1$s</xliff:g></string>
+    <string name="description_via_number_phone_account">ar <xliff:g id="phoneAccount" example="SIM 1">%1$s</xliff:g>, o <xliff:g id="number" example="(555) 555-5555">%2$s</xliff:g></string>
+    <string name="call_log_via_number_phone_account"><xliff:g id="phoneAccount" example="SIM 1">%1$s</xliff:g> o <xliff:g id="number" example="(555) 555-5555">%2$s</xliff:g></string>
+    <string name="description_call_log_call_action">Galw</string>
+    <string name="description_call_action">        Galw <xliff:g id="nameOrNumber" example="John Smith">^1</xliff:g>
+    </string>
+    <string name="description_video_call_action">        Galwad fideo <xliff:g id="nameOrNumber" example="John Smith">^1</xliff:g>.
+    </string>
+    <string name="description_voicemail_action">        Gwrando ar leisbost gan <xliff:g id="nameOrNumber" example="John Smith">^1</xliff:g>
+    </string>
+    <string name="description_voicemail_play">        Chwarae lleisbost gan <xliff:g id="nameOrNumber" example="John Smith">^1</xliff:g>
+    </string>
+    <string name="description_voicemail_pause">        Saib lleisbost gan <xliff:g id="nameOrNumber" example="John Smith">^1</xliff:g>
+    </string>
+    <string name="description_voicemail_delete">        Dileu lleisbost gan <xliff:g id="nameOrNumber" example="John Smith">^1</xliff:g>
+    </string>
+    <plurals name="description_voicemail_unread">
+        <item quantity="zero"><xliff:g id="count">%d</xliff:g> negeseuon lleisbost newydd</item>
+        <item quantity="one"><xliff:g id="count">%d</xliff:g> neges lleisbost newydd</item>
+        <item quantity="two"><xliff:g id="count">%d</xliff:g> neges lleisbost newydd</item>
+        <item quantity="few"><xliff:g id="count">%d</xliff:g> neges lleisbost newydd</item>
+        <item quantity="many"><xliff:g id="count">%d</xliff:g> neges lleisbost newydd</item>
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> neges lleisbost newydd</item>
+    </plurals>
+    <string name="description_create_new_contact_action">        Creu cyswllt ar gyfer <xliff:g id="nameOrNumber" example="John Smith">^1</xliff:g>
+    </string>
+    <string name="description_add_to_existing_contact_action">        Ychwanegu <xliff:g id="nameOrNumber" example="John Smith">^1</xliff:g> at gyswllt sy\'n bodoli
+    </string>
+    <string name="description_details_action">        Manylion galwad ar gyfer <xliff:g id="nameOrNumber" example="John Smith">^1</xliff:g>
+    </string>
+    <string name="toast_entry_removed">Wedi ei dileu o hanes galwadau</string>
+    <string name="call_log_header_today">Heddiw</string>
+    <string name="call_log_header_yesterday">Ddoe</string>
+    <string name="call_log_header_other">Hŷn</string>
+    <string name="call_detail_list_header">Rhestr galwadau</string>
+    <string name="voicemail_speaker_on">Troi\'r seinydd ymlaen.</string>
+    <string name="voicemail_speaker_off">Troi\'r seinydd i ffwrdd.</string>
+    <string name="voicemail_play_faster">Chwarae\'n gynt.</string>
+    <string name="voicemail_play_slower">Chwarae\'n arafach.</string>
+    <string name="voicemail_play_start_pause">Dechrau neu atal chwarae.</string>
+    <string name="list_delimeter">", "</string>
+    <string name="display_options_title">Dewisiadau dangos</string>
+    <string name="sounds_and_vibration_title">Synau a dirgrynu</string>
+    <string name="accessibility_settings_title">Hygyrchedd</string>
+    <string name="ringtone_title">Tôn caniad y ffôn</string>
+    <string name="vibrate_on_ring_title">Hefyd dirgrynu ar gyfer galwadau</string>
+    <string name="dtmf_tone_enable_title">Tonau Pad Deialu</string>
+    <string name="dtmf_tone_length_title">Hyd tonau pad deialu</string>
+    <string-array name="dtmf_tone_length_entries">
+        <item>Arferol</item>
+        <item>Hir</item>
+    </string-array>
+    <string name="respond_via_sms_setting_title">Ymatebion cyflym</string>
+    <string name="call_settings_label">Galwadau</string>
+    <string name="manage_blocked_numbers_label">Rhwystro galwadau</string>
+    <string name="blocked_numbers_disabled_emergency_header_label">        Rhwystro galwadau wedi\'i diffodd dros dro
+    </string>
+    <string name="blocked_numbers_disabled_emergency_desc">Mae rhwystro galwadau wedi\'i analluogi gan dy fod wedi cysylltu â\'r gwasanaethau brys o\'r ffôn hwn o fewn y 48 awr ddiwethaf. Caiff ei alluogi eto pan fydd y cyfnod 48 awr wedi pasio.
+    </string>
+    <string name="import_send_to_voicemail_numbers_label">Mewnforio rhifau</string>
+    <string name="blocked_call_settings_import_description">Rwyt wedi nodi rhai galwyr trwy apiau eraill fel bod eu galwadau yn mynd yn syth i\'r llaisbost.
+    </string>
+    <string name="blocked_call_settings_view_numbers_button">Gweld rhifau</string>
+    <string name="blocked_call_settings_import_button">Mewnforio</string>
+    <string name="send_to_voicemail_import_failed">Methwyd â mewnforio</string>
+    <string name="voicemail_archive_failed">Methwyd ag archifo\'r neges llais.</string>
+    <string name="description_blocked_number_list_delete">Dadrwystro\'r rhif</string>
+    <string name="addBlockedNumber">Ychwanegu rhif</string>
+    <string name="block_number_footer_message_vvm">Caiff galwadau o\'r rhifau hyn eu rhwystro a bydd negeseuon llais yn cael eu dileu yn awtomatig.
+    </string>
+    <string name="block_number_footer_message_no_vvm">Caiff galwadau o\'r rhifau hyn eu rhwystro, ond mi fydd dal yn bosib i\'r galwyr adael negeseuon llais.
+    </string>
+    <string name="block_list">Rhifau wedi eu rhwystro</string>
+    <string name="invalidNumber">Mae <xliff:g id="number" example="(555) 555-5555">%1$s</xliff:g> yn annilys.</string>
+    <string name="alreadyBlocked">Mae <xliff:g id="number" example="(555) 555-5555">%1$s</xliff:g> eisoes wedi ei rwystro.</string>
+    <string name="call_blocking_disabled_notification_title">Mae rhwystro galwadau wedi ei analluogi am 48 awr.    </string>
+    <string name="call_blocking_disabled_notification_text">Wedi\'i analluogi gan fod galwad brys wedi ei gwneud.    </string>
+    <string name="phone_account_settings_label">Cyfrifon galw</string>
+    <string name="permission_single_turn_on">Troi ymlaen</string>
+    <string name="permission_multiple_turn_on">Gosod caniatâd</string>
+    <string name="permission_no_speeddial">I alluogi deialu cyflym, rho ganiatâd yn yr ap Cysylltiadau.</string>
+    <string name="permission_no_calllog">I weld to log galwadau, rho ganiatâd yn yr ap Ffôn.</string>
+    <string name="permission_no_contacts">I weld dy gysylltiadau, rho ganiatâd yn yr ap Cysylltiadau.</string>
+    <string name="permission_no_voicemail">I gael mynediad at dy leisbost, rho ganiatâd yn yr ap Ffôn.</string>
+    <string name="permission_no_search">I weld dy gysylltiadau,\nrho ganiatâd yn yr ap Cysylltiadau.</string>
+    <string name="permission_place_call">I wneud galwad, rho ganiatâd yn yr ap Ffôn.</string>
+    <string name="toast_cannot_write_system_settings">Nid oes gan yr ap Ffôn ganiatâd i ysgrifennu ar osodiadau\'r system.</string>
+    <string name="blocked_number_call_log_label">Wedi rhwystro</string>
+    <string name="accessibility_call_is_active">Mae <xliff:g id="nameOrNumber">^1</xliff:g> yn weithredol</string>
+    <string name="missing_account_type">(Dim math)</string>
+    <string name="missing_account_name">(Dim enw)</string>
+</resources>

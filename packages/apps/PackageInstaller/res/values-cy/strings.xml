@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Gosodwr Pecyn</string>
+    <string name="next">Nesaf</string>
+    <string name="install">Gosod</string>
+    <string name="done">Iawn</string>
+    <string name="security_settings_desc">Caniatáu yr ap hwn i:</string>
+    <string name="cancel">Diddymu</string>
+    <string name="unknown">Anhysybys</string>
+    <string name="installing">Yn gosod\u2026</string>
+    <string name="install_done">Gosodwyd yr ap.</string>
+    <string name="install_confirm_question">Wyt ti eisiau gosod yr ap hwn?
+            Caiff mynediad at:</string>
+    <string name="install_confirm_question_no_perms">Wyt ti eisiau gosod yr ap hwn?
+            Nid oes arno angen mynediad arbennig at unrhyw beth.</string>
+    <string name="install_confirm_question_update">Wyt ti eisiau gosod diweddariad i\'r ap hwn sydd eisoes ar dy ddyfais?
+Ni chaiff dy ddata presennol ei golli. 
+Caiff yr ap wedi\'i diweddaru mynediad at:</string>
+    <string name="install_confirm_question_update_system">Wyt ti eisiau gosod diweddariad i\'r ap hwn sydd wedi\'i osod gyda\'r system?
+Ni chaiff dy ddata presennol ei golli. 
+Caiff yr ap wedi\'i diweddaru mynediad at:</string>
+    <string name="install_confirm_question_update_no_perms">Wyt ti eisiau gosod diweddariad i\'r ap hwn sydd eisoes ar dy ddyfais?
+Ni chaiff dy ddata presennol ei golli. 
+Nid oes arno angen mynediad arbennig at unrhyw beth.</string>
+    <string name="install_confirm_question_update_system_no_perms">Wyt ti eisiau gosod diweddariad i\'r ap hwn sydd wedi\'i osod gyda\'r system?
+Ni chaiff dy ddata presennol ei golli. 
+Nid oes arno angen mynediad arbennig at unrhyw beth.</string>
+    <string name="install_failed">Ni osodwyd yr ap.</string>
+    <string name="install_failed_blocked">Cafodd y pecyn ei rwystro rhag cael ei osod.</string>
+    <string name="install_failed_conflict">Mae\'r pecyn yn gwrthdaro a phecyn arall sy\'n bodoli gyda\'r un enw.</string>
+    <string name="install_failed_incompatible" product="tablet">Dyw\'r ap hwn ddim yn gydnaws â dy lechen.</string>
+    <string name="install_failed_incompatible" product="tv">Dyw\'r ap hwn ddim yn gydnaws â dy deledu.</string>
+    <string name="install_failed_incompatible" product="default">Dyw\'r ap hwn ddim yn gydnaws â dy ffôn.</string>
+    <string name="install_failed_invalid_apk">Mae\'n ymddangos bod y pecyn yn llygredig.</string>
+    <string name="install_failed_msg" product="tablet">Methwyd â gosod <xliff:g id="app_name">%1$s</xliff:g> ar dy lechen.</string>
+    <string name="install_failed_msg" product="tv">Methwyd â gosod <xliff:g id="app_name">%1$s</xliff:g> ar dy deledu.</string>
+    <string name="install_failed_msg" product="default">Methwyd â gosod <xliff:g id="app_name">%1$s</xliff:g> ar dy ffôn.</string>
+    <string name="launch">Agor</string>
+    <string name="unknown_apps_dlg_text" product="tablet">Am resymau diogelwch, mae dy lechen wedi ei gosod i rwystro gosod apiau o ffynonellau anhysbys.</string>
+    <string name="unknown_apps_dlg_text" product="tv">Am resymau diogelwch, mae dy deledu wedi ei osod i rwystro gosod apiau o ffynonellau anhysbys.</string>
+    <string name="unknown_apps_dlg_text" product="default">Am resymau diogelwch, mae dy ffôn wedi ei osod i rwystro gosod apiau o ffynonellau anhysbys.</string>
+    <string name="unknown_apps_admin_dlg_text">Nid yw dy weinyddwr yn caniatáu gosod apiau a ddaw o ffynonellau anhysbys.</string>
+    <string name="ok">Iawn</string>
+    <string name="settings">Gosodiadau</string>
+    <string name="manage_applications">Rheoli apiau</string>
+    <string name="dlg_app_replacement_title">Newid yr ap?</string>
+    <string name="dlg_app_replacement_statement">Bydd yr ap rwyt yn ei osod yn cymryd lle ap arall.\n\nBydd dy holl ddata defnyddiwr yn cael ei gadw.</string>
+    <string name="dlg_sys_app_replacement_statement">Ap system yw hwn.\n\nBydd dy holl ddata defnyddiwr yn cael ei gadw.</string>
+    <string name="out_of_space_dlg_title">Dim digon o le</string>
+    <string name="out_of_space_dlg_text">Methwyd â gosod <xliff:g id="app_name">%1$s</xliff:g>. Rhyddha ychydig o le storio a rhoi cynnig arall arni.</string>
+    <string name="dlg_ok">Iawn</string>
+    <string name="app_not_found_dlg_title">Ni chanfuwyd yr ap</string>
+    <string name="app_not_found_dlg_text">Ni chanfuwyd yr ap yn y rhestr o apiau wedi\'u gosod.</string>
+    <string name="uninstall_application_title">Dadosod yr ap</string>
+    <string name="uninstall_update_title">Dadosod y diweddariad</string>
+    <string name="uninstall_activity_text">Mae <xliff:g id="activity_name">%1$s</xliff:g> yn rhan o\'r ap hwn:</string>
+    <string name="uninstall_application_text">Wyt ti eisiau dadosod yr ap hwn?</string>
+    <string name="uninstall_application_text_all_users">Wyt ti eisiau dadosod yr ap hwn ar gyfer <b>pob</b> defnyddiwr? Caiff yr ap a\'i holl ddata ei ddileu ar gyfer <b>pob</b> defnyddiwr ar y ddyfais.</string>
+    <string name="uninstall_application_text_user">Wyt ti eisiau dadosod yr ap hwn ar gyfer y defnyddiwr <xliff:g id="username">%1$s</xliff:g>?</string>
+    <string name="uninstall_update_text">Disodli\'r ap hwn gyda\'r fersiwn o\'r ffatri? Caiff yr holl ddata ei golli.</string>
+    <string name="uninstall_update_text_multiuser">Disodli\'r ap hwn gyda\'r fersiwn o\'r ffatri? Caiff yr holl ddata ei golli. Mae hyn yn effeithio ar holl ddefnyddwyr y ddyfais hon, gan gynnwys y rhai gyda phroffiliau gwaith.</string>
+    <string name="uninstalling">Yn dadosod\u2026</string>
+    <string name="uninstall_done">Wedi cwblhau dadosod.</string>
+    <string name="uninstall_failed">Dadosod aflwyddiannus.</string>
+    <string name="uninstall_failed_device_policy_manager">Methu â dadosod gan fod y pecyn yn weinyddwr dyfais gweithredol.</string>
+    <string name="uninstall_failed_device_policy_manager_of_user">Methu â dadosod gan fod y pecyn yn weinyddwr dyfais gweithredol ar gyfer y defnyddiwr <xliff:g id="username">%1$s</xliff:g>.</string>
+    <string name="uninstall_all_blocked_profile_owner">Mae angen yr ap hwn ar rai defnyddwyr neu broffiliau ac mi gafodd ei ddadosod i eraill.</string>
+    <string name="uninstall_blocked_profile_owner">Mae ar dy broffil angen yr ap hwn ac nid yw\'n bosib ei dynnu.</string>
+    <string name="uninstall_blocked_device_owner">Mae gweinyddwr dy ddyfais yn mynnu bod angen yr ap hwn felly ni ellir ei ddadosod.</string>
+    <string name="manage_device_administrators">Rheoli gweinyddwyr y ddyfais</string>
+    <string name="manage_users">Rheoli defnyddwyr</string>
+    <string name="uninstall_failed_msg">Methwyd dadosod <xliff:g id="app_name">%1$s</xliff:g>.</string>
+    <string name="Parse_error_dlg_text">Roedd problem wrth dosrannu\'r pecyn.</string>
+    <string name="newPerms">Newydd</string>
+    <string name="allPerms">Y Cwbl</string>
+    <string name="privacyPerms">Preifatrwydd</string>
+    <string name="devicePerms">Mynediad Dyfais</string>
+    <string name="no_new_perms">Nid oes ar y diweddariad hwn angen unrhyw ganiatâd newydd.</string>
+    <string name="grant_confirm_question">Wyt ti am roi\'r caniatâd a ganlyn?
+        Caiff mynediad at:</string>
+    <string name="grant_dialog_button_deny">Gwrthod</string>
+    <string name="grant_dialog_button_deny_anyway">Gwrthod beth bynnag</string>
+    <string name="current_permission_template">        <xliff:g id="current_permission_index" example="1">%1$s</xliff:g> o
+        <xliff:g id="permission_count" example="2">%2$s</xliff:g></string>
+    <string name="permission_warning_template">Caniatáu i &lt;b&gt;<xliff:g id="app_name" example="Gmail">%1$s</xliff:g>&lt;/b&gt; <xliff:g id="action" example="do something">%2$s</xliff:g>?</string>
+    <string name="grant_dialog_button_allow">Caniatáu</string>
+    <string name="app_permissions_breadcrumb">Apiau</string>
+    <string name="app_permissions">Caniatâd apiau</string>
+    <string name="never_ask_again">Peidio â gofyn eto</string>
+    <string name="no_permissions">Dim caniatâd</string>
+    <string name="additional_permissions">Caniatâd ychwanegol</string>
+    <plurals name="additional_permissions_more">
+        <item quantity="zero"><xliff:g id="count" example="2">%1$d</xliff:g> mwy</item>
+        <item quantity="one"><xliff:g id="count" example="2">%1$d</xliff:g> arall</item>
+        <item quantity="two"><xliff:g id="count" example="2">%1$d</xliff:g> yn rhagor</item>
+        <item quantity="few"><xliff:g id="count" example="2">%1$d</xliff:g> yn rhagor</item>
+        <item quantity="many"><xliff:g id="count" example="2">%1$d</xliff:g> yn rhagor</item>
+        <item quantity="other"><xliff:g id="count" example="2">%1$d</xliff:g> yn rhagor</item>
+    </plurals>
+    <string name="old_sdk_deny_warning">Cafodd yr ap hwn ei ddylunio ar gyfer fersiwn gynharach o Android. Gall gwrthod caniatâd achosi iddo beidio â gweithio fel y disgwyl.</string>
+    <string name="default_permission_description">perfformio gweithred anhysbys</string>
+    <string name="app_permissions_group_summary">Caniateir <xliff:g id="count" example="10">%1$d</xliff:g> o <xliff:g id="count" example="10">%2$d</xliff:g> ap</string>
+    <string name="menu_show_system">Dangos apiau system</string>
+    <string name="menu_hide_system">Cuddio apiau system</string>
+    <string name="permission_title">Caniatâd <xliff:g id="permission" example="Camera">%1$s</xliff:g></string>
+    <string name="no_apps">Dim apiau</string>
+    <string name="location_settings">Gosodiadau Lleoliad</string>
+    <string name="location_warning">Mae <xliff:g id="app_name" example="Package Installer">%1$s</xliff:g> yn ddarparwr gwasanaethau lleoliad ar gyfer y ddyfais hon. Gellir addasu mynediad lleoliad yng ngosodiadau lleoliad.</string>
+    <string name="system_warning">Os wyt yn gwrthod y caniatâd hwn, bydd rhai nodweddion sylfaenol dy ddyfais yn methu â gweithio fel y bwriedir.</string>
+    <string name="permission_summary_enforced_by_policy">Gorfodwyd fel polisi</string>
+    <string name="loading">Yn llwytho\u2026</string>
+    <string name="all_permissions">Pob caniatâd</string>
+    <string name="other_permissions">Galluoedd eraill yr ap</string>
+    <string name="permission_request_title">Cais am ganiatâd</string>
+    <string name="screen_overlay_title">Canfuwyd troslun sgrin</string>
+    <string name="screen_overlay_message">I newid y gosodiad caniatâd hwn, rhaid yn gyntaf diffodd y troslun sgrin yn Gosodiadau \u003e Apiau</string>
+    <string name="screen_overlay_button">Agor gosodiadau</string>
+    <string name="wear_not_allowed_dlg_title">Android Wear</string>
+    <string name="wear_not_allowed_dlg_text">Gosod/dadosod gweithredoedd na sy\'n gydnaws â Wear.</string>
+    <string name="permission_review_warning_title_template_update">Cafodd <xliff:g id="app_name" example="Gmail">%1$s</xliff:g> ei ddiweddaru.
+Caniatáu <xliff:g id="app_name" example="Gmail">%1$s</xliff:g> i gael mynediad at y canlynol?</string>
+    <string name="permission_review_title_template_install">Dewisa pa bethau i ganiatáu <xliff:g id="app_name" example="Gmail">%1$s</xliff:g> cael mynediad atynt.</string>
+    <string name="permission_review_title_template_update">Cafodd <xliff:g id="app_name" example="Gmail">%1$s</xliff:g> ei ddiweddaru.
+Dewisa pa bethau i roi mynediad iddynt gan yr ap hwn.</string>
+    <string name="review_button_cancel">Diddymu</string>
+    <string name="review_button_continue">Parhau</string>
+    <string name="new_permissions_category">Caniatâd newydd</string>
+    <string name="current_permissions_category">Caniatâd cyfredol</string>
+    <string name="message_staging">Yn llwyfannu\'r ap…</string>
+    <string name="app_name_unknown">Anhysybys</string>
+</resources>

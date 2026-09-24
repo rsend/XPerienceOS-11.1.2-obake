@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SlidingUpPanelLayout">
+        <attr name="panelHeight" format="dimension" />
+        <attr name="shadowHeight" format="dimension" />
+        <attr name="paralaxOffset" format="dimension" />
+        <attr name="fadeColor" format="color" />
+        <attr name="flingVelocity" format="integer" />
+        <attr name="dragView" format="reference" />
+        <attr name="overlay" format="boolean"/>
+        <attr name="initialState" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="SlidingListLayout">
+        <attr name="initialOffset" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="RoundedCornerImageView">
+
+        <!-- These only get used if shape is rectangle -->
+        <attr name="roundTopLeft" format="boolean" />
+        <attr name="roundTopRight" format="boolean" />
+        <attr name="roundBottomLeft" format="boolean" />
+        <attr name="roundBottomRight" format="boolean" />
+
+        <!-- Radius is used for both shapes -->
+        <attr name="radius" format="dimension" />
+
+        <!-- Shape Settings -->
+        <attr name="shape" format="enum">
+
+            <!-- Possible Shapes -->
+            <enum name="rectangle" value="1" />
+            <enum name="circle" value="2" />
+
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="SnackbarLayout">
+        <attr name="android:maxWidth" />
+        <attr name="android:elevation" />
+        <attr name="uicommon_maxActionInlineWidth" format="dimension"/>
+    </declare-styleable>
+</resources>

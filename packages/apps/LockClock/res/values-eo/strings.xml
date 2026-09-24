@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2012-2014 The CyanogenMod Project (DvTonder)
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="unknown">Nekonata</string>
+    <string name="cancel">Nuligi</string>
+    <string name="weather_refresh_30min">30 minutoj</string>
+    <string name="weather_refresh_60min">60 minutoj</string>
+    <string name="weather_refresh_2hrs">2 horoj</string>
+    <string name="weather_refresh_4hrs">4 horoj</string>
+    <string name="weather_refresh_6hrs">6 horoj</string>
+    <string name="weather_refresh_8hrs">8 horoj</string>
+    <string name="weather_custom_location_title">Loko</string>
+    <string name="calendar_lookahead_3hrs">3 horoj</string>
+    <string name="calendar_lookahead_6hrs">6 horoj</string>
+    <string name="calendar_lookahead_12hrs">12 horoj</string>
+    <string name="calendar_lookahead_today">Hodiaŭ</string>
+    <string name="calendar_lookahead_1day">1 tago</string>
+    <string name="calendar_lookahead_3days">3 tagoj</string>
+    <string name="calendar_lookahead_1wk">1 semajno</string>
+    <string name="calendar_lookahead_2wks">2 semajnoj</string>
+    <string name="calendar_lookahead_4wks">4 semajnoj</string>
+</resources>

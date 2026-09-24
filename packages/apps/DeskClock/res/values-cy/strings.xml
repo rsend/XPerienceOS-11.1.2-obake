@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2014, The Linux Foundation. All rights reserved.
+     Not a Contribution.
+
+     Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_label">Cloc</string>
+    <string name="alarm_list_title">Larymau</string>
+    <string name="add_alarm">Ychwanegu larwm</string>
+    <string name="menu_desk_clock">Cloc desg</string>
+    <string name="menu_edit_alarm">Golygu larwm</string>
+    <string name="delete_alarm">Dileu\'r larwm</string>
+    <string name="enable_alarm">Troi larwm ymlaen</string>
+    <string name="disable_alarm">Diffodd larwm</string>
+    <string name="delete_alarm_confirm">Dileu\'r larwm hwn?</string>
+    <string name="show_clock">Dangos y cloc</string>
+    <string name="hide_clock">Cuddio\'r cloc</string>
+    <string name="label">Label</string>
+    <string name="on_switch">Ymlaen</string>
+    <string name="off_switch">I ffwrdd</string>
+    <string name="default_label">Larwm</string>
+    <string name="set_alarm">Gosod larwm</string>
+    <string name="alarm_vibrate">Dirgrynu</string>
+    <string name="alarm_repeat">Ailadrodd</string>
+    <string name="alert">Tôn Larwm</string>
+    <string name="default_timer_ringtone_title">Amserydd wedi Dod i Ben</string>
+    <string name="silent_timer_ringtone_title">Distaw</string>
+    <string name="ringtone">Tôn caniad</string>
+    <string name="time">Amser</string>
+    <string name="alarm_tomorrow">Yfory</string>
+    <string name="alarm_today">Heddiw</string>
+    <string name="alarm_alert_wake_up">Deffro\u0021</string>
+    <string name="alarm_alert_off_action_text">I ffwrdd</string>
+    <string name="alarm_alert_dismiss_text">Gwrthod</string>
+    <string name="alarm_alert_dismiss_now_text">Diystyru Nawr</string>
+    <string name="alarm_missed_title">Larwm wedi\'i methu</string>
+    <string name="alarm_missed_text"><xliff:g id="alarm_time">%s</xliff:g> - <xliff:g id="alarm_label">%s</xliff:g></string>
+    <string name="alarm_alert_snoozed_text">Yn caniatáu hepian</string>
+    <plurals name="alarm_alert_snooze_duration">
+        <item quantity="zero"><xliff:g id="number" example="7">%d</xliff:g> mun</item>
+        <item quantity="one">1 mun</item>
+        <item quantity="two"><xliff:g id="number" example="7">%d</xliff:g> fun</item>
+        <item quantity="few"><xliff:g id="number" example="7">%d</xliff:g> mun</item>
+        <item quantity="many"><xliff:g id="number" example="7">%d</xliff:g> mun</item>
+        <item quantity="other"><xliff:g id="number" example="7">%d</xliff:g> mun</item>
+    </plurals>
+    <string name="alarm_alert_off_text">Larwm i ffwrdd</string>
+    <string name="alarm_alert_snooze_text">Hepian</string>
+    <plurals name="alarm_alert_snooze_set">
+        <item quantity="zero">Yn caniatáu hepian am <xliff:g id="minutes">%d</xliff:g> munudau.</item>
+        <item quantity="one">Yn caniatáu hepian am 1 munud.</item>
+        <item quantity="two">Yn caniatáu hepian am <xliff:g id="minutes">%d</xliff:g> funud.</item>
+        <item quantity="few">Yn caniatáu hepian am <xliff:g id="minutes">%d</xliff:g> munud.</item>
+        <item quantity="many">Yn caniatáu hepian am <xliff:g id="minutes">%d</xliff:g> munud.</item>
+        <item quantity="other">Yn caniatáu hepian am <xliff:g id="minutes">%d</xliff:g> munud.</item>
+    </plurals>
+    <string name="alarm_alert_snooze_until">Yn hepian nes <xliff:g id="time">%s</xliff:g></string>
+    <string name="alarm_alert_predismiss_title">Larwm yn dod i fyny</string>
+    <string name="missed_alarm_has_been_deleted">Mae dy larwm wedi\'i fethu wedi ei dileu</string>
+    <string name="timer_notifications_less_min">Llai na funud i fynd</string>
+    <string name="timer_notifications_hours"><xliff:g id="HOURS" example="2 hours">%1$s</xliff:g><xliff:g id="REMAINING" example="remaining"> %3$s</xliff:g></string>
+    <string name="timer_notifications_minutes"><xliff:g id="MINUTES" example="2 minutes">%2$s</xliff:g><xliff:g id="REMAINING" example="remaining"> %3$s</xliff:g></string>
+    <string name="timer_notifications_hours_minutes"><xliff:g id="HOURS" example="2 hours">%1$s</xliff:g> <xliff:g id="MINUTES" example="2 minutes">%2$s</xliff:g> yn weddill</string>
+    <string name="timer_remaining_single">yn weddill</string>
+    <string name="timer_remaining_multiple">yn weddill</string>
+    <string-array name="alarm_set">
+        <item>Mae\'r larwm wedi\'i osod ar gyfer llai na funud o nawr.</item>
+        <item>Gosodwyd y larwm i ganu ymhen <xliff:g id="DAYS" example="2 days">%1$s</xliff:g> o nawr.</item>
+        <item>Mae\'r larwm wedi\'i osod ar gyfer <xliff:g id="HOURS" example="2 hours">%2$s</xliff:g> o nawr.</item>
+        <item>Gosodwyd y larwm i ganu ymhen <xliff:g id="DAYS" example="2 days">%1$s</xliff:g>, <xliff:g id="HOURS" example="2 hours">%2$s</xliff:g> o nawr.</item>
+        <item>Mae\'r larwm wedi\'i osod ar gyfer <xliff:g id="MINUTES" example="2 minutes">%3$s</xliff:g> o nawr.</item>
+        <item>Gosodwyd y larwm i ganu ymhen <xliff:g id="DAYS" example="2 days">%1$s</xliff:g>, <xliff:g id="MINUTES" example="2 minutes">%3$s</xliff:g> o nawr.</item>
+        <item>Mae\'r larwm wedi\'i osod ar gyfer <xliff:g id="HOURS" example="2 hours">%2$s</xliff:g> a <xliff:g id="MINUTES" example="2 minutes">%3$s</xliff:g> o nawr.</item>
+        <item>Gosodwyd y larwm i ganu ymhen <xliff:g id="DAYS" example="2 days">%1$s</xliff:g>, <xliff:g id="HOURS" example="2 hours">%2$s</xliff:g>, <xliff:g id="MINUTES" example="2 minutes">%3$s</xliff:g> o nawr.</item>
+    </string-array>
+    <plurals name="days">
+        <item quantity="zero"><xliff:g id="number" example="7">%s</xliff:g> diwrnodau</item>
+        <item quantity="one">1 diwrnod</item>
+        <item quantity="two"><xliff:g id="number" example="7">%s</xliff:g> ddiwrnod</item>
+        <item quantity="few"><xliff:g id="number" example="7">%s</xliff:g> diwrnod</item>
+        <item quantity="many"><xliff:g id="number" example="7">%s</xliff:g> diwrnod</item>
+        <item quantity="other"><xliff:g id="number" example="7">%s</xliff:g> diwrnod</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="zero"><xliff:g id="number" example="7">%s</xliff:g> oriau</item>
+        <item quantity="one">1 awr</item>
+        <item quantity="two"><xliff:g id="number" example="7">%s</xliff:g> awr</item>
+        <item quantity="few"><xliff:g id="number" example="7">%s</xliff:g> awr</item>
+        <item quantity="many"><xliff:g id="number" example="7">%s</xliff:g> awr</item>
+        <item quantity="other"><xliff:g id="number" example="7">%s</xliff:g> awr</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="zero"><xliff:g id="number" example="7">%s</xliff:g> munudau</item>
+        <item quantity="one">1 munud</item>
+        <item quantity="two"><xliff:g id="number" example="7">%s</xliff:g> funud</item>
+        <item quantity="few"><xliff:g id="number" example="7">%s</xliff:g> munud</item>
+        <item quantity="many"><xliff:g id="number" example="7">%s</xliff:g> munud</item>
+        <item quantity="other"><xliff:g id="number" example="7">%s</xliff:g> munud</item>
+    </plurals>
+    <string name="every_day">Pob dydd</string>
+    <string name="day_concat">", "</string>
+    <string name="clock_instructions">Dewisa gloc</string>
+    <string name="analog_gadget">Cloc analog</string>
+    <string name="help">cymorth</string>
+    <string name="settings">Gosodiadau</string>
+    <string name="snooze_duration_title">Hyd hepian</string>
+    <plurals name="snooze_duration">
+        <item quantity="zero"><xliff:g id="number" example="7">%s</xliff:g> munudau</item>
+        <item quantity="one">1 munud</item>
+        <item quantity="two"><xliff:g id="number" example="7">%s</xliff:g> funud</item>
+        <item quantity="few"><xliff:g id="number" example="7">%s</xliff:g> munud</item>
+        <item quantity="many"><xliff:g id="number" example="7">%s</xliff:g> munud</item>
+        <item quantity="other"><xliff:g id="number" example="7">%s</xliff:g> munud</item>
+    </plurals>
+    <plurals name="snooze_picker_label">
+        <item quantity="zero">munudau</item>
+        <item quantity="one">munud</item>
+        <item quantity="two">funud</item>
+        <item quantity="few">munud</item>
+        <item quantity="many">munud</item>
+        <item quantity="other">munud</item>
+    </plurals>
+    <string name="crescendo_duration_title">Cynyddu\'r sain yn raddol</string>
+    <string name="no_crescendo_duration">I ffwrdd</string>
+    <string name="crescendo_duration"><xliff:g id="number" example="7">%s</xliff:g> eiliad</string>
+    <string name="crescendo_picker_label">eiliadau</string>
+    <string name="auto_silence_title">Distawrwydd ar ôl</string>
+    <plurals name="auto_silence_summary">
+        <item quantity="zero"><xliff:g id="formatted_number" example="7">%s</xliff:g> munudau</item>
+        <item quantity="one">1 munud</item>
+        <item quantity="two"><xliff:g id="formatted_number" example="7">%s</xliff:g> funud</item>
+        <item quantity="few"><xliff:g id="formatted_number" example="7">%s</xliff:g> munud</item>
+        <item quantity="many"><xliff:g id="formatted_number" example="7">%s</xliff:g> munud</item>
+        <item quantity="other"><xliff:g id="formatted_number" example="7">%s</xliff:g> munud</item>
+    </plurals>
+    <string name="auto_silence_never">Byth</string>
+    <string-array name="auto_silence_entries">
+        <item>1 munud</item>
+        <item>5 munud</item>
+        <item>10 munud</item>
+        <item>15 munud</item>
+        <item>20 munud</item>
+        <item>25 munud</item>
+        <item>Byth</item>
+    </string-array>
+    <string name="week_start_title">Dechrau\'r wythnos ar</string>
+    <string-array name="week_start_entries">
+        <item>Dydd Sadwrn</item>
+        <item>Dydd Sul</item>
+        <item>Dydd Llun</item>
+    </string-array>
+    <string name="done">Iawn</string>
+    <string name="revert">Adfer</string>
+    <string name="delete">Dileu</string>
+    <string name="alarm_volume_title">Uchder sain larymau</string>
+    <string name="silent_ringtone_title">Distaw</string>
+    <string name="unknown_ringtone_title">Anhysbys</string>
+    <string name="alarm_notify_text">Hepian neu ddiystyru\'r larwm.</string>
+    <string name="alarm_notify_snooze_label"><xliff:g id="label">%s</xliff:g> (yn caniatáu hepian)</string>
+    <string name="alarm_notify_snooze_text">Larwm wedi\'i osod ar gyfer <xliff:g id="time">%s</xliff:g>. Cyffyrdda i\'w ddiddymu.</string>
+    <string name="volume_button_setting_title">Botymau uchder sain</string>
+    <string name="volume_button_dialog_title">Effaith botwm</string>
+    <string-array name="volume_button_setting_entries">
+        <item>Hepian</item>
+        <item>Diystyru</item>
+        <item>Gwneud dim</item>
+    </string-array>
+    <string name="default_ringtone_setting_title">Gosod tôn caniad arferol</string>
+    <string name="alarm_button_description">Larymau</string>
+    <string name="gallery_button_description">Oriel</string>
+    <string name="music_button_description">Cerddoriaeth</string>
+    <string name="nightmode_button_description">Tywyllu</string>
+    <string name="home_button_description">Lansiwr</string>
+    <string name="desk_clock_button_description">Dangosydd cloc</string>
+    <string name="label_description">Label</string>
+    <string name="ringtone_description">Tôn caniad</string>
+    <string name="weather_fetch_failure">Dyw gwybodaeth y tywydd ddim ar gael ar hyn o bryd.</string>
+    <string name="alarm_klaxon_service_desc">Gwasanaeth chwarae sain ar gyfer larymau a osodwyd yn Cloc.</string>
+    <string name="loading_ringtone">Yn llwytho tôn caniad\u2026</string>
+    <string name="timer_ring_service_desc">Gwasanaeth chwarae sain ar gyfer amseryddion a osodwyd yn Cloc.</string>
+    <string name="control_set_alarm">Gosod larwm</string>
+    <string name="menu_alarm">Larwm</string>
+    <string name="menu_timer">Amserydd</string>
+    <string name="menu_clock">Cloc</string>
+    <string name="menu_stopwatch">Cloc amseru</string>
+    <string name="button_alarms">Ychwanegu larwm</string>
+    <string name="button_cities">Dinasoedd</string>
+    <string name="button_menu">Rhagor o ddewisiadau</string>
+    <string name="menu_item_settings">Gosodiadau</string>
+    <string name="menu_item_help">Cymorth</string>
+    <string name="menu_item_add">Ychwanegu</string>
+    <string name="menu_item_night_mode">Modd nos</string>
+    <string name="menu_item_sort_by_gmt_offset">Trefnu\'n ôl amser</string>
+    <string name="menu_item_sort_by_name">Trefnu\'n ôl enw</string>
+    <string name="cities_add_gps_no_results">Ymholiad GPS yn adrodd dim canlyniadau lleoliad</string>
+    <string name="cities_add_gps_not_available">GPS dim ar gael</string>
+    <string name="cities_add_searching">Yn chwilio\u2026</string>
+    <string name="cities_add_city_title">Ychwanegu dinas</string>
+    <string name="cities_add_city_gps_cd">Tapia i leoleiddio dy leoliad presennol</string>
+    <string name="cities_add_loading">Yn llwytho\u2026</string>
+    <string name="cities_add_city_city">Dinas:</string>
+    <string name="cities_add_city_timezone">Cylchfa amser:</string>
+    <string name="cities_add_already_exists">Mae\'r ddinas eisoes yn y gronfa ddata.</string>
+    <string name="cities_add_city_failed">Methu â chreu\'r ddinas</string>
+    <string name="cities_delete_city_failed">Methu â dileu\'r ddinas</string>
+    <string name="cities_delete_city_msg">Wyt ti eisiau dileu
+        <xliff:g id="city">%s</xliff:g>?
+    </string>
+    <string name="cities_delete_city_title">Dileu dinas</string>
+    <string name="selected_cities_label">Dinasoedd a Ddewiswyd</string>
+    <string name="sw_resume_button">Parhau</string>
+    <string name="sw_reset_button">Ailosod</string>
+    <string name="sw_start_button">Dechrau</string>
+    <string name="sw_pause_button">Saib</string>
+    <string name="sw_lap_button">Lap</string>
+    <string name="sw_share_button">Rhannu</string>
+    <string name="hours_label">a</string>
+    <string name="minutes_label">m</string>
+    <string name="seconds_label">e</string>
+    <string name="hours_label_description">oriau</string>
+    <string name="minutes_label_description">munudau</string>
+    <string name="seconds_label_description">eiliadau</string>
+    <string name="zero">0</string>
+    <string name="sw_share_main">Fy amser i yw <xliff:g id="time">%s</xliff:g></string>
+    <string name="sw_share_laps">Amseroedd lapiau:</string>
+    <string name="sw_notification_lap_number">Lap <xliff:g id="number">%d</xliff:g></string>
+    <plurals name="Nhours_description">
+        <item quantity="zero"><xliff:g id="number" example="7">%d</xliff:g> oriau</item>
+        <item quantity="one">1 awr</item>
+        <item quantity="two"><xliff:g id="number" example="7">%d</xliff:g> awr</item>
+        <item quantity="few"><xliff:g id="number" example="7">%d</xliff:g> awr</item>
+        <item quantity="many"><xliff:g id="number" example="7">%d</xliff:g> awr</item>
+        <item quantity="other"><xliff:g id="number" example="7">%d</xliff:g> awr</item>
+    </plurals>
+    <plurals name="Nminutes_description">
+        <item quantity="zero"><xliff:g id="number" example="7">%d</xliff:g> munudau</item>
+        <item quantity="one">1 munud</item>
+        <item quantity="two"><xliff:g id="number" example="7">%d</xliff:g> funud</item>
+        <item quantity="few"><xliff:g id="number" example="7">%d</xliff:g> munud</item>
+        <item quantity="many"><xliff:g id="number" example="7">%d</xliff:g> munud</item>
+        <item quantity="other"><xliff:g id="number" example="7">%d</xliff:g> munud</item>
+    </plurals>
+    <plurals name="Nseconds_description">
+        <item quantity="zero"><xliff:g id="number" example="7">%d</xliff:g> eiliadau</item>
+        <item quantity="one">1 eiliad</item>
+        <item quantity="two"><xliff:g id="number" example="7">%d</xliff:g> eiliad</item>
+        <item quantity="few"><xliff:g id="number" example="7">%d</xliff:g> eiliad</item>
+        <item quantity="many"><xliff:g id="number" example="7">%d</xliff:g> eiliad</item>
+        <item quantity="other"><xliff:g id="number" example="7">%d</xliff:g> eiliad</item>
+    </plurals>
+    <string name="timer_add_timer">Ychwanegu Amserydd</string>
+    <string name="timer_start">Dechrau</string>
+    <string name="timer_delete">Dileu</string>
+    <string name="timer_descriptive_delete">Dileu <xliff:g id="number_string">%s</xliff:g></string>
+    <string name="timer_plus_one">Ychwanegu 1 Munud</string>
+    <string name="timer_plus_1_min">Ychwanegu 1 munud</string>
+    <string name="timer_stop">Stopio</string>
+    <string name="timer_stop_all">Stopio pob amserydd</string>
+    <string name="timer_reset">Ailosod</string>
+    <string name="timer_cancel">Diddymu</string>
+    <string name="timer_canceled">Diddymwyd yr amserydd</string>
+    <string name="timer_times_up">Amser ar ben</string>
+    <string name="timer_multi_times_up"><xliff:g id="NUM_TIMERS" example="2">%d</xliff:g> amserydd wedi dod i ben</string>
+    <string name="timer_notification_label">Amserydd</string>
+    <string name="timers_max_count_reached">Dim mwy na 4 amserydd</string>
+    <string name="timer_pause">Saib</string>
+    <string name="timer_reset_all">Ailosod pob amserydd</string>
+    <string-array name="sw_share_strings" translatable="true">
+        <item>Dy amseroedd di</item>
+        <item>Dy amseroedd di</item>
+        <item>Mae Android yn gyflym, ond nid mor gyflym ag wyt ti!</item>
+        <item>Dy amseroedd di</item>
+        <item>Dy amseroedd di</item>
+        <item>Dy amseroedd di</item>
+        <item>Dy amseroedd di</item>
+        <item>Dy amseroedd di</item>
+        <item>Dy amseroedd di</item>
+        <item>Dy amseroedd di</item>
+    </string-array>
+    <string name="home_label">Cartref</string>
+    <string name="cities_activity_title">Dinasoedd</string>
+    <string name="clock_settings">Cloc</string>
+    <string name="clock_style">Arddull</string>
+    <string name="open_date_settings">Newid dyddiad ac amser</string>
+    <string-array name="clock_style_entries">
+        <item>Analog</item>
+        <item>Digidol</item>
+    </string-array>
+    <string name="automatic_home_clock">Cloc adref awtomatig</string>
+    <string name="automatic_home_clock_summary">Wrth deithio rhywle ble mae\'r amser yn wahanol, ychwanega cloc ar gyfer adref.</string>
+    <string name="home_time_zone">Cylchfa amser adref</string>
+    <string name="home_time_zone_title">Cylchfa amser adref</string>
+    <string name="time_picker_cancel">Diddymu</string>
+    <string name="time_picker_set">Iawn</string>
+    <string name="time_picker_time_seperator">:</string>
+    <string name="time_picker_ampm_label">--</string>
+    <string name="time_picker_00_label">:00</string>
+    <string name="time_picker_30_label">: 30</string>
+    <string name="city_checked"><xliff:g id="city_name">%s</xliff:g> wedi ei ddewis</string>
+    <string name="city_unchecked"><xliff:g id="city_name">%s</xliff:g> heb ei ddewis</string>
+    <string-array name="timezone_labels">
+        <item>"Ynysoedd Marshall"</item>
+        <item>"Ynys Midway"</item>
+        <item>"Hawaii"</item>
+        <item>"Alasga"</item>
+        <item>"Amser y Cefnfor Tawel"</item>
+        <item>"Tijuana"</item>
+        <item>"Arizona"</item>
+        <item>"Chihuahua"</item>
+        <item>"Amser y Mynyddoedd (Gog. America)"</item>
+        <item>"Canolbarth America"</item>
+        <item>"Amser y Canolbarth (Gog. America)"</item>
+        <item>"Dinas Mecsico"</item>
+        <item>"Saskatchewan"</item>
+        <item>"Bogota"</item>
+        <item>"Amser y Dwyrain (Gog. America)"</item>
+        <item>"Feneswela"</item>
+        <item>"Amser yr Iwerydd (Barbados)"</item>
+        <item>"Amser yr Iwerydd (Canada)"</item>
+        <item>"Manaus"</item>
+        <item>"Santiago"</item>
+        <item>"Y Tir Newydd"</item>
+        <item>"Brasilia"</item>
+        <item>"Buenos Aires"</item>
+        <item>"Yr Ynys Las"</item>
+        <item>"Montevideo"</item>
+        <item>"Canol yr Iwerydd"</item>
+        <item>"Asores"</item>
+        <item>"Ynysoedd Penrhyn Verde"</item>
+        <item>"Casablanca"</item>
+        <item>"Llundain, Dulyn"</item>
+        <item>"Amsterdam, Berlin"</item>
+        <item>"Beograd"</item>
+        <item>"Brwsel"</item>
+        <item>"Sarajevo"</item>
+        <item>"Windhoek"</item>
+        <item>"Amser Gorll. Affrica"</item>
+        <item>"Amman, Gwlad Iorddonen"</item>
+        <item>"Athen, Istanbul"</item>
+        <item>"Beirut, Libanus"</item>
+        <item>"Cairo"</item>
+        <item>"Helsinki"</item>
+        <item>"Jerwsalem"</item>
+        <item>"Minsk"</item>
+        <item>"Harare"</item>
+        <item>"Baghdad"</item>
+        <item>"Moscfa"</item>
+        <item>"Coweit"</item>
+        <item>"Nairobi"</item>
+        <item>"Tehran"</item>
+        <item>"Baku"</item>
+        <item>"Tbilisi"</item>
+        <item>"Yerevan"</item>
+        <item>"Dubai"</item>
+        <item>"Kabul"</item>
+        <item>"Islamabad, Karachi"</item>
+        <item>"Ural'sk"</item>
+        <item>"Ekaterinburg"</item>
+        <item>"Kolkata"</item>
+        <item>"Sri Lanka"</item>
+        <item>"Kathmandu"</item>
+        <item>"Astana"</item>
+        <item>"Yangon"</item>
+        <item>"Krasnoyarsk"</item>
+        <item>"Bangkok"</item>
+        <item>"Beijing"</item>
+        <item>"Hong Cong"</item>
+        <item>"Irkutsk"</item>
+        <item>"Kuala Lumpur"</item>
+        <item>"Perth"</item>
+        <item>"Taipei"</item>
+        <item>"Seoul"</item>
+        <item>"Tokyo, Osaka"</item>
+        <item>"Yakutsk"</item>
+        <item>"Adelaide"</item>
+        <item>"Darwin"</item>
+        <item>"Brisbane"</item>
+        <item>"Hobart"</item>
+        <item>"Sydney, Canberra"</item>
+        <item>"Vladivostok"</item>
+        <item>"Guam"</item>
+        <item>"Magadan"</item>
+        <item>"Auckland"</item>
+        <item>"Ffiji"</item>
+        <item>"Tonga"</item>
+        <item>"Jakarta"</item>
+    </string-array>
+    <string name="alarm_settings">Larymau</string>
+    <string name="timer_service_desc">Mae\'n prosesu gweithredoedd o hysbysiadau amseru.</string>
+    <string name="stopwatch_service_desc">Mae\'n prosesu gweithredoedd o hysbysiadau stopwats.</string>
+    <string name="swn_paused">Wedi seibio</string>
+    <string name="description_direction_right">Llusga i\'r dde i\'w ddiystyru</string>
+    <string name="description_direction_left">Llusga i\'r chwith i hepian</string>
+    <string name="description_direction_both">Llusga i\'r chwith i hepian neu i\'r dde i ddiystyru</string>
+    <string name="timer_settings">Amseryddion</string>
+    <string name="timer_ringtone_title">Tôn amserydd</string>
+    <string name="timer_stopped">Amserydd wedi\'i stopio</string>
+    <string name="timer_paused">Amserydd wedi ei rewi</string>
+    <string name="timers_stopped"><xliff:g id="number" example="7">%d</xliff:g> amserydd wedi eu hoedi</string>
+    <string name="all_timers_stopped_notif">Cyffyrdda i weld dy amseryddion</string>
+    <string name="timers_in_use"><xliff:g id="number" example="7">%d</xliff:g> amserydd</string>
+    <string name="next_timer_notif">Amserydd nesaf: <xliff:g id="time_remaining" example="2 minutes remaining">%s</xliff:g></string>
+    <string name="screensaver_settings">Gosodiadau breuddwyd</string>
+    <string name="night_mode_title">Modd nos</string>
+    <string name="night_mode_summary">Dangos â golau isel iawn (ar gyfer ystafelloedd tywyll)</string>
+    <string name="expand_alarm">Ehangu\'r larwm</string>
+    <string name="collapse_alarm">Lleihau\'r larwm</string>
+    <string name="alarm_undo">dad-wneud</string>
+    <string name="alarm_deleted">Dilëwyd y larwm</string>
+    <string name="alarm_select">Math o larwm</string>
+    <string name="alarm_select_ringtone">Tôn canu</string>
+    <string name="alarm_select_external">Trac sain</string>
+    <string name="alarm_select_ok">Iawn</string>
+    <string name="alarm_select_cancel">Diddymu</string>
+    <string name="slash"> / </string>
+    <string name="world_day_of_week_label"> / <xliff:g id="label">%s</xliff:g></string>
+    <string name="next_alarm_description">Larwm nesaf: <xliff:g id="alarm_time" example="Wed 8:00am">%s</xliff:g></string>
+    <string name="alarms_selected"><xliff:g id="alarms">%d</xliff:g> wedi\'u dewis</string>
+    <string name="deleted_message">Dilëwyd</string>
+    <plurals name="alarm_delete_confirmation">
+        <item quantity="zero">Dileu\'r larymau?</item>
+        <item quantity="one">Dileu\'r larwm a ddewiswyd?</item>
+        <item quantity="two">Dileu\'r larymau a ddewiswyd?</item>
+        <item quantity="few">Dileu\'r larymau a ddewiswyd?</item>
+        <item quantity="many">Dileu\'r larymau a ddewiswyd?</item>
+        <item quantity="other">Dileu\'r larymau a ddewiswyd?</item>
+    </plurals>
+    <string name="timer_delete_confirmation">Dileu\'r amserydd hwn?</string>
+    <string name="city_delete_confirmation">Tynnu\'r ddinas hon?</string>
+    <string name="digital_gadget">Cloc digidol</string>
+    <string name="no_alarms">Dim Larymau</string>
+    <string name="no_alarms_set">DIm larymau wedi\'u gosod</string>
+    <string name="no_upcoming_alarms">DIM LARYMAU I DDOD</string>
+    <string name="invalid_time">Amser annilys <xliff:g id="invalid_hour" example="25">%d</xliff:g>:<xliff:g id="invalid_minutes" example="63">%d</xliff:g> <xliff:g id="invalid_ampm" example="PM">%s</xliff:g></string>
+    <string name="no_alarm_at">Dim larwm am <xliff:g id="alarm_time_hour" example="14">%d</xliff:g>:<xliff:g id="alarm_time_minutes" example="23">%d</xliff:g></string>
+    <string name="no_scheduled_alarms">Dim larymau wedi\'u gosod</string>
+    <string name="no_label_specified">Dim label wedi\'i nodi</string>
+    <string name="no_alarms_with_label">Does dim larwm yn cynnwys y label</string>
+    <string name="stopwatch_isnt_running">Dyw\'r cloc amseru ddim yn rhedeg.</string>
+    <string name="stopwatch_paused">Stopwats wedi rhewi</string>
+    <string name="stopwatch_reset">Cloc amseru wedi\'i ailosod</string>
+    <string name="stopwatch_lapped">Cloc amseru wedi\'i lapio</string>
+    <string name="stopwatch_started">Cloc amseru wedi dechrau</string>
+    <string name="no_alarm_scheduled_for_this_time">Does dim larwm wedi\'i osod ar gyfer yr amser hwn.</string>
+    <string name="alarm_is_dismissed">Larwm <xliff:g id="alarm_time" example="14:20">%s</xliff:g> wedi\'i ddiystyru</string>
+    <string name="alarm_is_set">Mae\'r larwm wedi\'i osod ar gyfer <xliff:g id="alarm_time" example="14:20">%s</xliff:g></string>
+    <string name="no_timers_exist">Does dim amseryddion yn bodoli</string>
+    <string name="too_many_timers_exist">Mae mwy nag un amserydd yn bodoli</string>
+    <string name="timer_does_not_exist">Mae\'r amserydd wedi ei dynnu.</string>
+    <string name="timer_created">Amserydd wedi\'i greu</string>
+    <string name="timer_was_reset">Amserydd wedi\'i ailosod</string>
+    <string name="timer_deleted">Amserydd wedi\'i ddileu</string>
+    <string name="timer_started">Amserydd wedi dechrau</string>
+    <string name="invalid_timer_length">Hyd amserydd annilys</string>
+    <string name="no_city_selected">Dim dinas wedi\'i dewis</string>
+    <string name="the_city_you_specified_is_not_available">Dyw\'r dinas honno ddim ar gael</string>
+    <string name="the_city_already_added">Mae\'r ddinas honno eisoes wedi\'i hychwanegu.</string>
+    <string name="city_added"><xliff:g id="city_name" example="Paris">%s</xliff:g> wedi\'i ychwanegu</string>
+    <string name="city_deleted"><xliff:g id="city_name" example="Paris">%s</xliff:g> wedi\'i dileu</string>
+    <string name="alarm_cant_be_dismissed_still_more_than_24_hours_away">Ni ellir diystyru larwm <xliff:g id="alarm_time" example="14:20">%s</xliff:g> eto gan ei fod dros 24 awr i ffwrdd</string>
+    <string name="dismiss_alarm">Diystyru\'r larwm</string>
+    <string name="pick_alarm_to_dismiss">Dewis pa larwm i\'w ddiystyru</string>
+    <string name="no_firing_alarms">Dim larymau yn canu</string>
+    <string name="alarm_is_snoozed"><xliff:g id="alarm_time" example="14:20">%s</xliff:g> larwm yn caniatáu hepian am 10 munud</string>
+    <string name="custom_ringtone">Tôn Caniad Personol</string>
+    <string name="ringtone_default">"Tôn caniad arferol"</string>
+    <string name="have_denied_storage_permission">Rwyt wedi gwrthod caniatâd storfa ond mae\'n bosib ychwanegu\'r caniatâd hwn eto yn gosodiadau.</string>
+</resources>

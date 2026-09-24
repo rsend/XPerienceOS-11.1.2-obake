@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="meeting_when">        Kiam:
+        <xliff:g id="when">%s</xliff:g>
+    </string>
+    <string name="meeting_where">        Kie:
+        <xliff:g id="where">%s</xliff:g>
+    </string>
+    <string name="account_setup_options_mail_window_1day">Unu tago</string>
+    <string name="account_setup_options_mail_window_3days">Tri tagoj</string>
+    <string name="account_setup_options_mail_window_1week">Unu semajno</string>
+    <string name="account_setup_options_mail_window_2weeks">Du semajnoj</string>
+    <string name="account_setup_options_mail_window_1month">Unu monato</string>
+</resources>

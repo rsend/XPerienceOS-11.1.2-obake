@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Compatibility name required by the API-25 Qualcomm IMS service.
+
+     The service's only external com.android.ims classes are supplied by the
+     existing AOSP ims-common.jar, which is already part of the boot classpath.
+     Publishing the historical library name avoids modifying the proprietary
+     APK manifest or duplicating framework classes.
+-->
+<permissions>
+    <library name="org.codeaurora.imslibrary"
+             file="/system/framework/ims-common.jar" />
+</permissions>
+

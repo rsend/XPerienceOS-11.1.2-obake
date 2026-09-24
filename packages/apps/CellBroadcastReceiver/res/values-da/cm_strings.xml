@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2016 The CyanogenMod Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="category_india_settings_title">Indstillinger for Indien</string>
+    <string name="enable_channel_60_alerts_title">Vis kanal 60 udsendelser</string>
+    <string name="enable_channel_60_alerts_summary">Kanal 60 bruges i Indien til operatørspecifikke oplysninger</string>
+    <string name="enable_cmas_presidential_alerts_title">Vis præsidentielle varsler</string>
+    <string name="enable_cmas_presidential_alerts_summary">Vis altid præsidentielle varsler</string>
+    <string name="enable_alert_tone_title">Advarselstone</string>
+    <string name="enable_alert_tone_summary">Advarselstone tændt</string>
+    <string name="add_channel">Tilføj kanal</string>
+    <string name="channel_list">Kanalliste</string>
+    <string name="receive_broad_cast">Modtag CB-SMS</string>
+    <string name="cb_channel_dialog_channel_name">Kanalnavn (0-10 tegn)</string>
+    <string name="cb_channel_dialog_channel_number">Kanalnummer (0-65534)</string>
+    <string name="cb_channel_dialog_channel_state">Aktivér kanalen</string>
+    <string name="cb_error_channel_num">Indtast venligst kanalnummer (0-65534).</string>
+    <string name="cb_error_channel_name">Længden af kanalnavnet må ikke være længere end 24 tegn.</string>
+    <string name="cb_menu_tile">Kanal-opgave</string>
+    <string name="cb_menu_add_channel">Tilføj kanal</string>
+    <string name="cb_menu_channel_list">Kanalliste</string>
+    <string name="enable">Aktivér</string>
+    <string name="disable">Deaktivér</string>
+    <string name="cb_error_channel_id_exist">Dette kanal-ID eksisterer allerede.</string>
+    <string name="cb_channel_dialog_edit_channel">Redigér kanal</string>
+    <string name="cb_default_new_channel_name">Ny kanal</string>
+    <string name="cb_menu_edit">Redigér</string>
+    <string name="cb_menu_delete">Slet CB-meddelelse</string>
+    <string name="cell_broadcast_setting">CB-indstillinger</string>
+    <string name="error_updating_title">Opkaldsindstillingsfejl</string>
+    <string name="reading_settings">Læser indstillinger</string>
+    <string name="updating_settings">Opdaterer indstillinger</string>
+    <string name="error_finish_dialog_title">Netværk, eller SIM-kort fejl.</string>
+    <string name="close_dialog">OK</string>
+    <string name="updating_title">Opkaldsindstillinger</string>
+    <string name="done_text">Færdig</string>
+    <string name="cb_channel_50_name">Kanal 50</string>
+</resources>

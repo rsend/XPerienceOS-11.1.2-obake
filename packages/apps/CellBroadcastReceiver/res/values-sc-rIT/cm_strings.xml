@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2016 The CyanogenMod Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="enable_channel_60_alerts_summary">Su canale 60 est impreadu in Ìndia pro informatziones ispetzìficas de s\'operadore</string>
+    <string name="enable_cmas_presidential_alerts_title">Ammustra sas allertas presidentziales</string>
+    <string name="enable_cmas_presidential_alerts_summary">Ammustra semper sas allertas presidentziales</string>
+    <string name="enable_alert_tone_title">Sonu de allerta</string>
+    <string name="enable_alert_tone_summary">Sonu de allerta allutu</string>
+    <string name="add_channel">Annanghe unu canale</string>
+    <string name="channel_list">Lista de canales</string>
+    <string name="cb_channel_dialog_channel_name">Nùmene de su canale (0-10 caràteres)</string>
+    <string name="cb_channel_dialog_channel_number">Nùmeru de su canale (0-65534)</string>
+    <string name="cb_channel_dialog_channel_state">Abìlita su canale</string>
+    <string name="cb_error_channel_num">Pro praghere inserta su nùmeru de su canale (0-65534).</string>
+    <string name="cb_error_channel_name">Sa longària de su nùmene de su canale non depet èssere de prus de 24 caràteres.</string>
+    <string name="cb_menu_tile">Operatziones canale</string>
+    <string name="cb_menu_add_channel">Annanghe unu canale</string>
+    <string name="cb_menu_channel_list">Lista de canales</string>
+    <string name="enable">Abìlita</string>
+    <string name="disable">Disabìlita</string>
+    <string name="cb_error_channel_id_exist">Custu ID de su canale esistit giai.</string>
+    <string name="cb_default_new_channel_name">Canale nou</string>
+    <string name="cb_menu_edit">Modìfica</string>
+    <string name="close_dialog">AB</string>
+    <string name="updating_title">Impostatziones mutidas</string>
+    <string name="done_text">Fatu</string>
+    <string name="cb_channel_50_name">Canale 50</string>
+</resources>

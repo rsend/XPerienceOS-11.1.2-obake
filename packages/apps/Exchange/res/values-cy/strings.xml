@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="exchange_name_alternate">Microsoft Exchange ActiveSync</string>
+    <string name="meeting_accepted">        Derbyniwyd:
+        <xliff:g id="subject">%s</xliff:g>
+    </string>
+    <string name="meeting_declined">        Gwrthodwyd:
+        <xliff:g id="subject">%s</xliff:g>
+    </string>
+    <string name="meeting_tentative">        Posib:
+        <xliff:g id="subject">%s</xliff:g>
+    </string>
+    <string name="meeting_canceled">        Canslwyd:
+        <xliff:g id="subject">%s</xliff:g>
+    </string>
+    <string name="meeting_updated">        Diweddarwyd:
+        <xliff:g id="subject">%s</xliff:g>
+    </string>
+    <string name="meeting_when">        Pa bryd:
+        <xliff:g id="when">%s</xliff:g>
+    </string>
+    <string name="meeting_where">        Pa le:
+        <xliff:g id="where">%s</xliff:g>
+    </string>
+    <string name="meeting_recurring">        Pa bryd:
+        <xliff:g id="eventdate" example="Tue, Mar 10, 2010 at 2:30 pm">%s</xliff:g>
+        (yn ail-adrodd)
+    </string>
+    <string name="meeting_allday">        Pa bryd:
+        <xliff:g id="eventdate" example="Tue, Mar 10, 2010 ">%s</xliff:g>
+        (trwy\'r dydd)
+    </string>
+    <string name="meeting_allday_recurring">        Pa bryd:
+        <xliff:g id="eventdate" example="Tue, Mar 10, 2010 ">%s</xliff:g>
+        (trwy\'r dydd, yn ail-adrodd)
+    </string>
+    <string name="app_name">Gwasanaethau Cyfnewid</string>
+    <string name="exception_cancel">        Mae\'r digwyddiad hwn wedi\'i
+        ganslo am:
+        <xliff:g id="date">%s</xliff:g>
+    </string>
+    <string name="exception_updated">        Mae manylion y digwyddiad hwn wedi\'u
+        newid ar gyfer:
+        <xliff:g id="date">%s</xliff:g>
+    </string>
+    <string name="policy_dont_allow_storage_cards">Peidio â chaniatáu cardiau storfa</string>
+    <string name="policy_dont_allow_unsigned_apps">Peidio â chaniatáu apiau heb eu llofnodi</string>
+    <string name="policy_dont_allow_unsigned_installers">Peidio â chaniatáu gosodwyr apiau heb eu llofnodi</string>
+    <string name="policy_dont_allow_wifi">Peidio â chaniatáu Wi-Fi</string>
+    <string name="policy_dont_allow_text_messaging">Peidio â chaniatáu negeseuon testun</string>
+    <string name="policy_dont_allow_pop_imap">Peidio â chaniatáu cyfrifon POP3 neu IMAP</string>
+    <string name="policy_dont_allow_irda">Peidio â chaniatáu cyfathrebiadau isgoch</string>
+    <string name="policy_dont_allow_html">Peidio â chaniatáu ebost HTML</string>
+    <string name="policy_dont_allow_browser">Peidio â chaniatáu porwyr</string>
+    <string name="policy_dont_allow_consumer_email">Peidio â chaniatáu ebost defnyddwyr</string>
+    <string name="policy_dont_allow_internet_sharing">Peidio â chaniatáu rhannu\'r rhyngrwyd</string>
+    <string name="policy_require_smime">Mynnu negeseuon fformat SMIME</string>
+    <string name="policy_bluetooth_restricted">Cyfyngu ar ddefnydd Bluetooth</string>
+    <string name="policy_app_blacklist">Peidio â chaniatáu apiau penodol</string>
+    <string name="policy_app_whitelist">Caniatáu apiau penodol yn unig</string>
+    <string name="policy_text_truncation">Cyfyngu maint testun e-bost</string>
+    <string name="policy_html_truncation">Cyfyngu ar maint negeseuon ebost HTML</string>
+    <string name="policy_require_sd_encryption">Mynnu bod cardiau SD wedi\'u hamgryptio</string>
+    <string name="policy_dont_allow_attachments">Peidio â chaniatáu atodiadau</string>
+    <string name="policy_max_attachment_size">Cyfyngu maint atodiadau</string>
+    <string name="policy_require_manual_sync_roaming">Caniatáu cysoni â llaw yn unig wrth grwydro</string>
+    <string name="policy_require_encryption">Mynnu bod y ddyfais wedi\'u hamgryptio</string>
+    <string name="account_setup_options_mail_window_auto">Awtomatig</string>
+    <string name="account_setup_options_mail_window_1day">Un diwrnod</string>
+    <string name="account_setup_options_mail_window_3days">Tridiau</string>
+    <string name="account_setup_options_mail_window_1week">Un wythnos</string>
+    <string name="account_setup_options_mail_window_2weeks">Pythefnos</string>
+    <string name="account_setup_options_mail_window_1month">Un mis</string>
+    <string name="account_setup_options_mail_window_all">Y cwbl</string>
+    <string name="auth_error_notification_title">Gwall dilysu</string>
+    <string name="auth_error_notification_text">I olygu gosodiadau cyfrif ar gyfer <xliff:g id="account">%s</xliff:g></string>
+    <string name="email_settings_not_available">Rhaid ail-alluogi\'r ap Ebost er mwyn gweld y gosodiadau.</string>
+</resources>

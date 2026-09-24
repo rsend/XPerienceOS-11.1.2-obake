@@ -1,0 +1,23 @@
+# Keep all Fragments in this package, which are used by reflection.
+-keep class org.cyanogenmod.cmparts.*Fragment
+-keep class org.cyanogenmod.cmparts.*Picker
+-keep class org.cyanogenmod.cmparts.*Settings
+-keep class org.cyanogenmod.cmparts.cmstats.*
+-keep class org.cyanogenmod.cmparts.hardware.*
+-keep class org.cyanogenmod.cmparts.input.*
+-keep class org.cyanogenmod.cmparts.livedisplay.*
+-keep class org.cyanogenmod.cmparts.notificationlight.*
+-keep class org.cyanogenmod.cmparts.power.*
+-keep class org.cyanogenmod.cmparts.privacyguard.*
+-keep class org.cyanogenmod.cmparts.profiles.*
+-keep class org.cyanogenmod.cmparts.sounds.*
+
+# Keep click responders
+-keepclassmembers class com.android.settings.inputmethod.UserDictionaryAddWordActivity {
+  *** onClick*(...);
+}
+
+-keep public class * extends android.support.v7.preference.* {
+    public <init>(android.content.Context, android.util.AttributeSet);
+}
+

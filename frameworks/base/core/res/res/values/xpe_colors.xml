@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+**
+** Copyright 2006, The Android Open Source Project
+** Copyright 2017, The XPerience Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+    <!-- xperience Palette colors -->
+    <color name="xperience_blue_palette_50">#ccedff</color>
+    <color name="xperience_blue_palette_100">#80d1ff</color>
+    <color name="xperience_blue_palette_200">#48bdff</color>
+    <color name="xperience_blue_palette_300">#00a3ff</color>
+    <color name="xperience_blue_palette_400">#0090e1</color>
+    <color name="xperience_blue_palette_500">#007cc2</color>
+    <color name="xperience_blue_palette_600">#0068a3</color>
+    <color name="xperience_blue_palette_700">#005585</color>
+    <color name="xperience_blue_palette_800">#004166</color>
+    <color name="xperience_blue_palette_900">#002e48</color>
+    <color name="xperience_blue_palette_A100">#ccedff</color>
+    <color name="xperience_blue_palette_A200">#80d1ff</color>
+    <color name="xperience_blue_palette_A400">#0090e1</color>
+    <color name="xperience_blue_palette_A700">#005585</color>
+
+
+    <color name="xperience_midnight_palette_50">#b1c3d4</color>
+    <color name="xperience_midnight_palette_100">#809cb9</color>
+    <color name="xperience_midnight_palette_200">#5c80a5</color>
+    <color name="xperience_midnight_palette_300">#425d77</color>
+    <color name="xperience_midnight_palette_400">#374d64</color>
+    <color name="xperience_midnight_palette_500">#2c3e50</color>
+    <color name="xperience_midnight_palette_600">#212f3c</color>
+    <color name="xperience_midnight_palette_700">#161f29</color>
+    <color name="xperience_midnight_palette_800">#0b1015</color>
+    <color name="xperience_midnight_palette_900">#010101</color>
+    <color name="xperience_midnight_palette_A100">#b1c3d4</color>
+    <color name="xperience_midnight_palette_A200">#809cb9</color>
+    <color name="xperience_midnight_palette_A400">#374d64</color>
+    <color name="xperience_midnight_palette_A700">#161f29</color>
+
+    <!-- Shutdown/reboot dialog -->
+<!--    <color name="shutdown_background">#ffffffff</color>-->
+    <color name="shutdown_background">#202026</color>
+    <color name="shutdown_primary_text">@color/material_pixel_blue_bright</color>
+    <color name="shutdown_progress_tint">@color/material_pixel_blue_bright</color><!--wine color-->
+
+    <color name="background">#232329</color>
+</resources>

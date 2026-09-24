@@ -1,0 +1,15 @@
+-keep class com.cyanogenmod.lockclock.preference.Preferences {
+  *;
+}
+
+-keep class * extends java.util.ListResourceBundle {
+    protected Object[][] getContents();
+}
+
+# Needed for Parcelable/SafeParcelable Creators to not get stripped
+-keepnames class * implements android.os.Parcelable {
+    public static final ** CREATOR;
+}
+
+-dontwarn cyanogenmod.**
+-keep class cyanogenmod.app.** { *; }

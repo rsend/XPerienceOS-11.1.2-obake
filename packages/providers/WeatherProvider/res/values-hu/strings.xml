@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2016 The CyanogenMod Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <string name="app_name">Időjárás szolgáltató</string>
+    <string name="weather_0">Tornádó</string>
+    <string name="weather_1">Trópusi vihar</string>
+    <string name="weather_2">Hurrikán</string>
+    <string name="weather_3">Komoly viharok</string>
+    <string name="weather_4">Viharok</string>
+    <string name="weather_5">Havas eső</string>
+    <string name="weather_6">Eső és ónos eső</string>
+    <string name="weather_7">Hó és ónos eső</string>
+    <string name="weather_8">Ónos szitálás</string>
+    <string name="weather_9">Ködszitálás</string>
+    <string name="weather_10">Ónos eső</string>
+    <string name="weather_11">Záporok</string>
+    <string name="weather_12">Hófúvás</string>
+    <string name="weather_13">Könnyű hózáporok</string>
+    <string name="weather_14">Hóátfúvás</string>
+    <string name="weather_15">Hó</string>
+    <string name="weather_16">Jégeső</string>
+    <string name="weather_17">Ónos eső</string>
+    <string name="weather_18">Por</string>
+    <string name="weather_19">Köd</string>
+    <string name="weather_20">Pára</string>
+    <string name="weather_21">Füst</string>
+    <string name="weather_22">Viharos erejű szél</string>
+    <string name="weather_23">Szeles</string>
+    <string name="weather_24">Hideg</string>
+    <string name="weather_25">Felhős</string>
+    <string name="weather_26">Túlnyomóan felhős</string>
+    <string name="weather_27">Túlnyomóan felhős</string>
+    <string name="weather_28">Foltokban felhős</string>
+    <string name="weather_29">Foltokban felhős</string>
+    <string name="weather_30">Tiszta</string>
+    <string name="weather_31">Napos</string>
+    <string name="weather_32">Derűs</string>
+    <string name="weather_33">Derűs</string>
+    <string name="weather_34">Eső és jégeső</string>
+    <string name="weather_35">Forróság</string>
+    <string name="weather_36">Elszigetelt vihar</string>
+    <string name="weather_37">Elszórt viharok</string>
+    <string name="weather_38">Elszórt záporok</string>
+    <string name="weather_39">Kemény havazás</string>
+    <string name="weather_40">Elszórt hózápor</string>
+    <string name="weather_41">Foltokban felhős</string>
+    <string name="weather_42">Viharos</string>
+    <string name="weather_43">Hózáporok</string>
+    <string name="weather_44">Elszigetelt vihar</string>
+</resources>

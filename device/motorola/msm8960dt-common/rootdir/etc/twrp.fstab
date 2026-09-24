@@ -1,0 +1,16 @@
+# mount point   fstype          device
+
+/data         f2fs      /dev/block/platform/msm_sdcc.1/by-name/userdata     flags=fsflags="inline_xattr";encryptable=footer;length=-16384
+/cache        ext4      /dev/block/platform/msm_sdcc.1/by-name/cache        
+/system       ext4      /dev/block/platform/msm_sdcc.1/by-name/system       
+/firmware     ext4      /dev/block/platform/msm_sdcc.1/by-name/modem        flags=mounttodecrypt;backup=1;display=Firmware
+/fsg          ext4      /dev/block/platform/msm_sdcc.1/by-name/fsg          flags=backup=1;display=FSG
+/persist      ext4      /dev/block/platform/msm_sdcc.1/by-name/persist      flags=backup=1;display=Persist
+/misc         emmc      /dev/block/platform/msm_sdcc.1/by-name/misc
+/boot         emmc      /dev/block/platform/msm_sdcc.1/by-name/boot
+/recovery     emmc      /dev/block/platform/msm_sdcc.1/by-name/recovery
+/pds          emmc      /dev/block/platform/msm_sdcc.1/by-name/pds          flags=backup=1;display=PDS
+/usb-otg      auto      /dev/block/sda1   /dev/block/sda                    flags=display="USB OTG";storage;wipeingui;removable
+
+
+

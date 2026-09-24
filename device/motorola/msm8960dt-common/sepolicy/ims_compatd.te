@@ -1,0 +1,41 @@
+type ims_compatd, domain;
+type ims_compatd_exec, exec_type, file_type;
+
+init_daemon_domain(ims_compatd)
+
+# The adapter owns rild_ims0 inside Qualcomm's setgid radio socket directory.
+# Keep access limited to Unix socket creation and removal in that directory.
+allow ims_compatd qmuxd_socket:dir { search write add_name remove_name };
+allow ims_compatd qmuxd_socket:sock_file { create setattr getattr read write unlink };
+
+# Connect upstream to the socket served by stock rild.
+allow ims_compatd rild:unix_stream_socket connectto;
+
+# Clark runs in the radio domain and connects to the adapter-owned endpoint.
+allow radio ims_compatd:unix_stream_socket connectto;
+
+# Step 3 carries acknowledged, carrier-neutral service state from ims_compatd
+# to the DPL bootstrap process. Both executables share this domain; init owns
+# creation and labeling of the private seqpacket endpoint.
+unix_socket_connect(ims_compatd, ims_service_state, ims_compatd)
+
+# Publish explicit liveness/readiness state under sys.ims.compat.status.
+set_prop(ims_compatd, qcom_ims_prop)
+
+# ims_dpl_bootstrapd shares this tightly scoped domain. It installs one
+# reserved IPv6 policy rule through /system/bin/ip and reads interface state
+# through rtnetlink. The service remains root because net_admin is required.
+allow ims_compatd self:capability { net_admin net_raw };
+allow ims_compatd self:netlink_route_socket {
+    create bind read write getattr setopt nlmsg_read nlmsg_write
+};
+allow ims_compatd self:process { fork sigchld };
+allow ims_compatd system_file:file {
+    read open getattr execute execute_no_trans
+};
+
+# The bounded Enhanced4G worker shares this domain (no root escalation).
+# lib-imss/libqmi reaches the modem through qmuxd; libdiag is an indirect dependency.
+qmux_socket(ims_compatd)
+diag_use(ims_compatd)
+allow ims_compatd self:process sigkill;

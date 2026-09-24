@@ -1,0 +1,84 @@
+From 1865cb91535f06b1ccb2de3b21a1239a208265d2 Mon Sep 17 00:00:00 2001
+From: "klozz (TeamMEX)" <xxx.reptar.rawrr.xxx@gmail.com>
+Date: Sat, 21 May 2016 17:38:28 -0500
+Subject: [PATCH] obake: Switch to standalone libinit
+
+* No need to build the msm one
+
+Change-Id: I885f9290531fa6506dfcc336f7ead599eb45c133
+Signed-off-by: klozz <xxx.reptar.rawrr.xxx@gmail.com>
+---
+ BoardConfig.mk      |  4 ++--
+ init/Android.mk     | 11 +++++++++++
+ init/init_obake.cpp |  8 ++------
+ 3 files changed, 15 insertions(+), 8 deletions(-)
+ create mode 100644 init/Android.mk
+
+diff --git a/BoardConfig.mk b/BoardConfig.mk
+index b6ff8db..b96ed58 100644
+--- a/BoardConfig.mk
++++ b/BoardConfig.mk
+@@ -28,8 +28,8 @@ TARGET_OTA_ASSERT_DEVICE := xt1030,obakem,obakem_verizon,xt1080,obake,obake_veri
+ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
+ 
+ # Init
+-TARGET_INIT_VENDOR_LIB := libinit_msm
+-TARGET_LIBINIT_DEFINES_FILE := $(LOCAL_PATH)/init/init_obake.cpp
++TARGET_INIT_VENDOR_LIB := libinit_obake
++TARGET_RECOVERY_DEVICE_MODULES := libinit_obake
+ TARGET_NR_SVC_SUPP_GIDS := 28
+ TARGET_UNIFIED_DEVICE := true
+ 
+diff --git a/init/Android.mk b/init/Android.mk
+new file mode 100644
+index 0000000..685eaab
+--- /dev/null
++++ b/init/Android.mk
+@@ -0,0 +1,11 @@
++LOCAL_PATH := $(call my-dir)
++
++include $(CLEAR_VARS)
++
++LOCAL_MODULE_TAGS := optional
++LOCAL_C_INCLUDES := system/core/init
++LOCAL_CFLAGS := -Wall -DANDROID_TARGET=\"$(TARGET_BOARD_PLATFORM)\"
++LOCAL_SRC_FILES := init_obake.cpp
++LOCAL_MODULE := libinit_obake
++
++include $(BUILD_STATIC_LIBRARY) 
+diff --git a/init/init_obake.cpp b/init/init_obake.cpp
+index 34aff91..1718146 100644
+--- a/init/init_obake.cpp
++++ b/init/init_obake.cpp
+@@ -34,7 +34,7 @@
+ #include "log.h"
+ #include "util.h"
+ 
+-#include "init_msm.h"
++#define ISMATCH(a,b)	(!strncmp(a,b,PROP_VALUE_MAX))
+ 
+ #define ARRAY_SIZE(x) (sizeof(x)/sizeof(x[0]))
+ 
+@@ -96,8 +96,7 @@ static void verizon_properties()
+     property_set("ro.com.google.clientidbase.yt", "android-verizon");
+ }
+ 
+-void init_msm_properties(unsigned long msm_id, unsigned long msm_ver,
+-        char *board_type)
++void vendor_load_properties()
+ {
+     char platform[PROP_VALUE_MAX];
+     char radio[PROP_VALUE_MAX];
+@@ -107,9 +106,6 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver,
+     char devicename[PROP_VALUE_MAX];
+     int rc;
+ 
+-    UNUSED(msm_id);
+-    UNUSED(msm_ver);
+-    UNUSED(board_type);
+ 
+     rc = property_get("ro.board.platform", platform);
+     if (!rc || !ISMATCH(platform, ANDROID_TARGET))
+-- 
+2.14.1
+

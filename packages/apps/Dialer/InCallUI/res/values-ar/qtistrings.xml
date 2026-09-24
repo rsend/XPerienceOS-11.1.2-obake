@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2015, 2016 The Linux Foundation. All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, with or without
+  ~ modification, are permitted provided that the following conditions are
+  ~ met:
+  ~      Redistributions of source code must retain the above copyright
+  ~       notice, this list of conditions and the following disclaimer.
+  ~      Redistributions in binary form must reproduce the above
+  ~       copyright notice, this list of conditions and the following
+  ~       disclaimer in the documentation and/or other materials provided
+  ~       with the distribution.
+  ~      Neither the name of The Linux Foundation nor the names of its
+  ~       contributors may be used to endorse or promote products derived
+  ~       from this software without specific prior written permission.
+  ~
+  ~ THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED
+  ~ WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+  ~ MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT
+  ~ ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS
+  ~ BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+  ~ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+  ~ SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+  ~ BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+  ~ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+  ~ OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
+  ~ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+  ~
+  -->
+<!-- The xml contains Qti specific resource strings neede for any value added features. -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="call_substate_label"><xliff:g id="id">%1$s</xliff:g>: حالة المكالمة:\u000a <xliff:g id="state" example="Resumed">%2$s</xliff:g></string>
+    <string name="call_substate_call_resumed">استئناف</string>
+    <string name="call_substate_connected_suspended_audio">متصل، ولكن تم تعطيل الصوت</string>
+    <string name="call_substate_connected_suspended_video">متصل، ولكن تم تعليق الفيديو</string>
+    <string name="call_substate_avp_retry">جاري الكشف عن جودة الفيديو</string>
+    <string name="video_quality_changed"><xliff:g id="id">%1$s</xliff:g>: تم تغيير جودة الفيديو إلى <xliff:g id="quality" example="high">%2$s</xliff:g></string>
+    <string name="video_quality_high">عالية</string>
+    <string name="video_quality_medium">متوسطة</string>
+    <string name="video_quality_low">منخفضة</string>
+    <string name="video_quality_unknown">غير معروف</string>
+    <string name="player_started">بدأ المشغل</string>
+    <string name="player_stopped">توقف المشغل</string>
+    <string name="camera_not_ready">الكاميرا غير جاهزة</string>
+    <string name="camera_ready">الكاميرا جاهزة</string>
+    <string name="unknown_call_session_event">حدث جلسة اتصال غير معروف</string>
+    <string name="wlan_data_usage_label">استخدام بيانات واي-فاي: <xliff:g id="usage">%1$s</xliff:g></string>
+    <string name="lte_data_usage_label">استخدام بيانات الجوال: <xliff:g id="usage">%1$s</xliff:g></string>
+    <string name="modify_call_option_title">حدد نوع المكالمة</string>
+    <string name="modify_call_option_vt">فيديو ثنائي</string>
+    <string name="modify_call_option_vt_tx">إرسال الفيديو</string>
+    <string name="modify_call_option_vt_rx">استقبال الفيديو</string>
+    <string name="modify_call_option_voice">صوت فقط</string>
+    <string name="modify_call_failed_due_to_low_battery">فشل في تعديل المكالمة بسبب ضعف مستوى البطارية.</string>
+    <string name="qti_ims_transfer_num_error">لم يتم تعيين الرقم. أدخل الرقم عن طريق إعدادات IMS وأعد المحاولة.</string>
+    <string name="qti_ims_transfer_request_error">فشل طلب تحويل المكالمة.</string>
+    <string name="qti_ims_transfer_request_success">نجاح طلب تحويل المكالمة.</string>
+    <string name="qti_ims_onscreenBlindTransfer">نقل أعمى</string>
+    <string name="qti_ims_onscreenAssuredTransfer">نقل مضمون</string>
+    <string name="qti_ims_onscreenConsultativeTransfer">نقل استشاري</string>
+    <string name="video_call_not_allowed_if_tty_enabled">الرجاء تعطيل وضع TTY للسماح بمكالمات الفيديو.</string>
+    <string name="qti_description_target_deflect">ابعاد</string>
+    <string name="qti_description_deflect_error">لم يتم تعيين الرقم. قم بتوفير الرقم عبر إعدادات IMS وأعد المحاولة.</string>
+    <string name="qti_description_deflect_service_error">خدمة تحويل المكالمة غير معتمدة.</string>
+    <string name="call_failed_ho_not_feasible">انتهت المكالمة لأن تسليم LTE إلى 3G/2G لم يكن ممكناً.</string>
+    <string name="onscreenAddParticipant">إضافة مشترك</string>
+    <string name="cs_redial_option">خيار إعادة الطلب</string>
+    <string name="cs_redial_msg">لا يمكن إجراء مكالمة فيديو IMS، أعد الطلب كمكالمة صوتية غير IMS؟</string>
+    <string name="session_modify_cause_upgrade_local_request">تمت ترقية المكالمة بناء على طلب المستخدم</string>
+    <string name="session_modify_cause_upgrade_remote_request">تمت ترقية المكالمة بناء على طلب المستخدم الاخر</string>
+    <string name="session_modify_cause_downgrade_local_request">تم خفض الاتصال بناء على طلب المستخدم</string>
+    <string name="session_modify_cause_downgrade_remote_request">تم خفض الاتصال بناء على طلب المستخدم الأخر</string>
+    <string name="session_modify_cause_downgrade_rtp_timeout">تم تنزيل المكالمة بسبب انتهاء مهلة RTP</string>
+    <string name="session_modify_cause_downgrade_qos">تم خفض الاتصال بسبب جودة الخدمة</string>
+    <string name="session_modify_cause_downgrade_packet_loss">تم خفض الاتصال بسبب فقدان الحزمة</string>
+    <string name="session_modify_cause_downgrade_low_thrput">تم خفض الاتصال بسبب انخفاض الإنتاجية</string>
+    <string name="session_modify_cause_downgrade_thermal_mitigation">تم خفض الاتصال بسبب التخفيف الحراري</string>
+    <string name="session_modify_cause_downgrade_lipsync">تم خفض الاتصال بسبب شفة المزامنة</string>
+    <string name="session_modify_cause_downgrade_generic_error">تم خفض الاتصال بسبب خطأ عام</string>
+    <string name="card_title_incoming_conf_call">مكالمة جماعية واردة</string>
+    <string name="card_title_incoming_video_conf_call">فيديو جماعي وارد</string>
+    <string name="notification_incoming_conf_call">مكالمة جماعية واردة</string>
+    <string name="incoming_conf_via_template">واردة عبر <xliff:g id="Provider_NAME">%s</xliff:g></string>
+    <string name="call_failed_due_to_low_battery">أخفق الاتصال بسبب انخفاض مستوى البطارية</string>
+    <string name="vowifi_call_quality_good">جودة صوت جيدة</string>
+    <string name="vowifi_call_quality_fair">جودة صوت معتدلة</string>
+    <string name="vowifi_call_quality_poor">جودة الصوت ضعيفة</string>
+    <string name="low_battery">تحذير انخفاض البطارية</string>
+    <string name="low_battery_hangup_msg">هل تريد تعليق المكالمة؟</string>
+    <string name="low_battery_msg">مستوى البطارية أقل من 15٪. هل تريد متابعة مكالمة الفيديو أم تحويلها إلى مكالمة صوتية؟</string>
+    <string name="low_battery_convert">تحويل</string>
+    <string name="video_call">مكالمة فيديو</string>
+    <string name="video_call_cannot_upgrade">لا يمكن قبول مكالمات الفيديو في الوقت الحالي</string>
+    <string name="video_call_picture_mode_menu_title">اختر وضع الصورة</string>
+    <string name="video_call_picture_mode_preview_video">معاينة الكاميرا</string>
+    <string name="video_call_picture_mode_incoming_video">مكالمة فيديو واردة</string>
+    <string name="video_call_picture_mode_cancel_option">إلغاء</string>
+    <string name="video_call_picture_mode_save_option">حفظ</string>
+</resources>

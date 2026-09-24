@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2015, 2016 The Linux Foundation. All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, with or without
+  ~ modification, are permitted provided that the following conditions are
+  ~ met:
+  ~      Redistributions of source code must retain the above copyright
+  ~       notice, this list of conditions and the following disclaimer.
+  ~      Redistributions in binary form must reproduce the above
+  ~       copyright notice, this list of conditions and the following
+  ~       disclaimer in the documentation and/or other materials provided
+  ~       with the distribution.
+  ~      Neither the name of The Linux Foundation nor the names of its
+  ~       contributors may be used to endorse or promote products derived
+  ~       from this software without specific prior written permission.
+  ~
+  ~ THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED
+  ~ WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+  ~ MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT
+  ~ ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS
+  ~ BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+  ~ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+  ~ SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+  ~ BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+  ~ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+  ~ OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
+  ~ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+  ~
+  -->
+<!-- The xml contains Qti specific resource strings neede for any value added features. -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="call_substate_call_resumed">Gjenopptatt</string>
+    <string name="call_substate_connected_suspended_audio">Tilkoblet, men lyden er deaktivert</string>
+    <string name="call_substate_connected_suspended_video">Tilkoblet, men video er deaktivert</string>
+    <string name="call_substate_avp_retry">Sjekker videokvalitet\u2026</string>
+    <string name="video_quality_changed"><xliff:g id="id">%1$s</xliff:g>: Videokvalitet er endret til <xliff:g id="quality" example="high">%2$s</xliff:g></string>
+    <string name="video_quality_high">høy</string>
+    <string name="video_quality_medium">middels</string>
+    <string name="video_quality_low">lav</string>
+    <string name="video_quality_unknown">ukjent</string>
+    <string name="camera_not_ready">Kameraet er ikke klart</string>
+    <string name="camera_ready">Kameraet er klart</string>
+    <string name="wlan_data_usage_label">Wi-Fi databruk: <xliff:g id="usage">%1$s</xliff:g></string>
+    <string name="lte_data_usage_label">LTE databruk: <xliff:g id="usage">%1$s</xliff:g></string>
+    <string name="modify_call_option_title">Velg anropstype</string>
+    <string name="modify_call_option_vt">To-veis video</string>
+    <string name="modify_call_option_vt_tx">Videosending</string>
+    <string name="modify_call_option_vt_rx">Videomottak</string>
+    <string name="modify_call_option_voice">Kun stemme</string>
+    <string name="modify_call_failed_due_to_low_battery">Kan ikke endre samtalen på grunn av lavt batterinivå.</string>
+    <string name="onscreenAddParticipant">Legg til deltaker</string>
+    <string name="session_modify_cause_upgrade_local_request">Samtalen ble oppgradert på forespørsel fra bruker</string>
+    <string name="session_modify_cause_upgrade_remote_request">Samtalen ble oppgradert på forespørsel fra fjernbruker</string>
+    <string name="session_modify_cause_downgrade_local_request">Samtalen ble nedgradert på forespørsel fra bruker</string>
+    <string name="session_modify_cause_downgrade_remote_request">Samtalen ble nedgradert på forespørsel fra fjernbruker</string>
+    <string name="session_modify_cause_downgrade_rtp_timeout">Samtalen ble nedgradert på grunn av RTP-tidsavbrudd</string>
+    <string name="session_modify_cause_downgrade_qos">Samtalen ble nedgradert på grunn av tjenestekvalitet</string>
+    <string name="session_modify_cause_downgrade_packet_loss">Samtalen ble nedgradert på grunn av pakketap</string>
+    <string name="session_modify_cause_downgrade_low_thrput">Samtalen ble nedgradert på grunn av lav dataoverføringshastighet</string>
+    <string name="session_modify_cause_downgrade_thermal_mitigation">Samtalen ble nedgradert på grunn av overoppheting</string>
+    <string name="session_modify_cause_downgrade_lipsync">Samtalen ble nedgradert på grunn av leppesynkronisering</string>
+    <string name="session_modify_cause_downgrade_generic_error">Samtalen ble nedgradert på grunn av en generell feil</string>
+    <string name="card_title_incoming_conf_call">Innkommende samtalekonferanse</string>
+    <string name="card_title_incoming_video_conf_call">Innkommende videokonferanse</string>
+    <string name="notification_incoming_conf_call">Innkommende samtalekonferanse</string>
+    <string name="incoming_conf_via_template">Innkommende konferanse via <xliff:g id="provider_name">%s</xliff:g></string>
+    <string name="call_failed_due_to_low_battery">Oppringingen mislyktes på grunn av lavt batterinivå</string>
+    <string name="vowifi_call_quality_good">God talekvalitet</string>
+    <string name="vowifi_call_quality_fair">Grei talekvalitet</string>
+    <string name="vowifi_call_quality_poor">Dårlig talekvalitet</string>
+    <string name="low_battery">Lavt batterinivå</string>
+    <string name="low_battery_hangup_msg">Vil du legge på?</string>
+    <string name="low_battery_msg">Batterinivået er under 15%. Vil du fortsette med videosamtalen eller konvertere den til en stemmesamtale?</string>
+    <string name="low_battery_convert">Konverter</string>
+    <string name="video_call">Videoanrop</string>
+</resources>

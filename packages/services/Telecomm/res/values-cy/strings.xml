@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2013 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="telecommAppLabel" product="default">Rheolaeth Galwadau</string>
+    <string name="userCallActivityLabel" product="default">Ffôn</string>
+    <string name="unknown">Anhysybys</string>
+    <string name="notification_missedCallTitle">Galwad wedi ei methu</string>
+    <string name="notification_missedWorkCallTitle">Galwad gwaith wedi\'i methu</string>
+    <string name="notification_missedCallsTitle">Galwadau wedi eu methu</string>
+    <string name="notification_missedCallsMsg"><xliff:g id="num_missed_calls">%s</xliff:g> galwad wedi eu methu</string>
+    <string name="notification_missedCallTicker">Wedi methu galwad gan <xliff:g id="missed_call_from">%s</xliff:g></string>
+    <string name="notification_missedCall_call_back">Galw nôl</string>
+    <string name="notification_missedCall_message">Neges</string>
+    <string name="accessibility_call_muted">Galwad wedi\'i distewi.</string>
+    <string name="accessibility_speakerphone_enabled">Seinydd uchel wedi\'i alluogi.</string>
+    <string name="respond_via_sms_canned_response_1">Methu siarad nawr. Be sy\'?</string>
+    <string name="respond_via_sms_canned_response_2">Mi alwa\'i nôl yn fuan.</string>
+    <string name="respond_via_sms_canned_response_3">Mi alwa\'i nôl yn hwyrach.</string>
+    <string name="respond_via_sms_canned_response_4">Methu siarad nawr. Galw fi\'n hwyrach?</string>
+    <string name="respond_via_sms_setting_title">Atebion cyflym</string>
+    <string name="respond_via_sms_setting_title_2">Golygu atebion cyflym</string>
+    <string name="respond_via_sms_edittext_dialog_title">Ateb cyflym</string>
+    <string name="respond_via_sms_confirmation_format">Anfonwyd neges at <xliff:g id="phone_number">%s</xliff:g>.</string>
+    <string name="enable_account_preference_title">Cyfrifon galw</string>
+    <string name="outgoing_call_not_allowed_user_restriction">Dim ond galwadau brys sydd yn bosib.</string>
+    <string name="outgoing_call_not_allowed_no_permission">Ni all yr ap hwn wneud galwadau allan heb ganiatâd y Ffôn.</string>
+    <string name="outgoing_call_error_no_phone_number_supplied">I wneud galwad, rho rif dilys.</string>
+    <string name="duplicate_video_call_not_allowed">Methu ag ychwanegu\'r alwad ar hyn o bryd.</string>
+    <string name="no_vm_number">Rhif lleisbost ar goll</string>
+    <string name="no_vm_number_msg">Does dim rhif ar gyfer lleisbost wedi ei gadw ar y cerdyn SIM.</string>
+    <string name="add_vm_number_str">Ychwanegu rhif</string>
+    <string name="change_default_dialer_dialog_title">Gosod <xliff:g id="new_app">%s</xliff:g> fel dy ap Ffôn arferol?</string>
+    <string name="change_default_dialer_dialog_affirmative">Gosod fel Rhagosodiad</string>
+    <string name="change_default_dialer_dialog_negative">Diddymu</string>
+    <string name="change_default_dialer_warning_message">Bydd <xliff:g id="new_app">%s</xliff:g> yn medru gwneud a rheoli pob agwedd o alwadau. Dylid ond osod ap wyt ti\'n ymddiried ynddo fel dy ap Ffôn diofyn.</string>
+    <string name="blocked_numbers">Rhifau wedi eu rhwystro</string>
+    <string name="blocked_numbers_msg">Ni fyddi\'n derbyn galwadau na negesuon testun oddi wrth rifau wedi\'u rhwystro.</string>
+    <string name="block_number">Ychwanegu rhif</string>
+    <string name="unblock_dialog_body">Dadrwystro <xliff:g id="number_to_block">%1$s</xliff:g>?</string>
+    <string name="unblock_button">Dadrwystro</string>
+    <string name="add_blocked_dialog_body">Rhwystro galwadau a negesuon testun oddi wrth</string>
+    <string name="add_blocked_number_hint">Rhif ffôn</string>
+    <string name="block_button">Rhwystro</string>
+    <string name="non_primary_user">Dim ond perchennog y ddyfais gall gweld a rheoli rhifau wedi eu rhwystro.</string>
+    <string name="delete_icon_description">Dadrwystro</string>
+    <string name="blocked_numbers_butter_bar_title">Rhwystro wedi ei diffodd dros dro</string>
+    <string name="blocked_numbers_butter_bar_body">Ar ôl deialu neu anfon neges at rif argyfwng, mae rhwystro yn cael ei diffodd i sicrhau bod modd i\'r gwasanaethau brys cysylltu â thi.</string>
+    <string name="blocked_numbers_butter_bar_button">Ail-alluogi nawr</string>
+    <string name="blocked_numbers_number_blocked_message"><xliff:g id="blocked_number">%1$s</xliff:g> wedi\'i rwystro</string>
+    <string name="blocked_numbers_number_unblocked_message"><xliff:g id="unblocked_number">%1$s</xliff:g> wedi\'i dadrwystro</string>
+    <string name="blocked_numbers_block_emergency_number_message">Amhosib rhwystro rhif argyfwng.</string>
+    <string name="blocked_numbers_number_already_blocked_message">Mae <xliff:g id="blocked_number">%1$s</xliff:g> eisoes wedi ei rwystro.</string>
+    <string name="test_account_0_label">Q Mobile</string>
+    <string name="test_account_1_label">Market Wireless</string>
+    <string name="test_account_2_label">Sonoma Circles Talk Plus</string>
+    <string name="test_account_3_label">Bay Voice Chat Pro</string>
+    <string name="test_account_0_short_description">Account with Q Mobile</string>
+    <string name="test_account_1_short_description">Account with Market Wireless</string>
+    <string name="test_account_2_short_description">Talk to everyone in your Circles!</string>
+    <string name="test_account_3_short_description">Chat with Chat Network users</string>
+    <string name="handle_restricted">CYFYNGEDIG</string>
+    <string name="toast_personal_call_msg">Defnyddio\'r deialydd personol i wneud yr alwad</string>
+    <string name="toast_make_video_call_failed">Methu â gwneud galwad fideo - fformat rhif anghywir</string>
+</resources>

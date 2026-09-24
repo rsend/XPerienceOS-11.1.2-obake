@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2013-2014 The CyanogenMod Project
+     Copyright (c) 2013, The Linux Foundation. All rights reserved.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="callFailed_incoming_cb_enabled">צד שלישי חוסם את כל השיחות הנכנסות.</string>
+    <string name="callUnanswered_forwarded">שיחה לא נענתה והועברה</string>
+    <string name="incall_call_type_label_forwarded">שיחה הועברה</string>
+    <string name="card_title_dialing_waiting">מחייג (ממתין\u2026)</string>
+    <string name="calling_via_waiting_template">מתקשר באמצעות <xliff:g id="provider_name">%s</xliff:g> (ממתין\u2026)</string>
+    <string name="card_title_active_via_template"><xliff:g id="status" example="Call on hold">%1$s</xliff:g> (דרך <xliff:g id="provider_name">%2$s</xliff:g>)</string>
+    <string name="card_title_waiting_call">שיחה ממתינה</string>
+    <string name="call_recording_failed_message">התחלת הקלטת השיחה נכשלה</string>
+    <string name="call_recording_file_location">הקלטת השיחה ב-<xliff:g id="filename">%s</xliff:g> נשמרה</string>
+    <string name="onscreenCallRecordText">הקלט שיחה</string>
+    <string name="onscreenStopCallRecordText">הפסק הקלטה</string>
+    <string name="recording_time_text">מקליט</string>
+    <string name="recording_warning_title">להפעיל הקלטת שיחה?</string>
+    <string name="recording_warning_text">לתשומת לבך: באחריותך לציית לכל חוקים, התקנות והכללים החלים על השימוש באפשרות הקלטת השיחות, על השימוש ו/או ההפצה של הקלטות אלה.</string>
+    <string name="call_failed_due_to_validate_number">אין אפשרות לחייג שיחת ווידאו, המספר אינו תקין</string>
+    <string name="call_state_dialing">מחייג</string>
+    <string name="call_state_holding">ממתין</string>
+    <string name="call_state_active">פעיל</string>
+    <string name="call_state_unknown">לא ידוע</string>
+    <string name="call_state_disconnecting">מתנתק</string>
+    <string name="call_state_disconnected">מנותק</string>
+    <string name="too_many_recipients">אי אפשר לעשות שיחת ועידה של יותר מארבע משתתפים בדור רביעי.</string>
+</resources>

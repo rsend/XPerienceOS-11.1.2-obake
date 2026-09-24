@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2016 The CyanogenMod Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <string name="app_name">天氣供應商</string>
+    <string name="weather_0">龍捲風</string>
+    <string name="weather_1">熱帶暴風雨</string>
+    <string name="weather_2">颶風</string>
+    <string name="weather_3">大雷雨</string>
+    <string name="weather_4">雷雨</string>
+    <string name="weather_5">雨加雪</string>
+    <string name="weather_6">雨加霰</string>
+    <string name="weather_7">雪加霰</string>
+    <string name="weather_8">凍毛雨</string>
+    <string name="weather_9">毛毛雨</string>
+    <string name="weather_10">凍雨</string>
+    <string name="weather_11">陣雨</string>
+    <string name="weather_12">陣雪</string>
+    <string name="weather_13">小陣雪</string>
+    <string name="weather_14">大風雪</string>
+    <string name="weather_15">降雪</string>
+    <string name="weather_16">冰雹</string>
+    <string name="weather_17">霰</string>
+    <string name="weather_18">塵霾</string>
+    <string name="weather_19">有霧</string>
+    <string name="weather_20">薄霧</string>
+    <string name="weather_21">塵霧</string>
+    <string name="weather_22">狂風</string>
+    <string name="weather_23">有風</string>
+    <string name="weather_24">寒冷</string>
+    <string name="weather_25">陰天</string>
+    <string name="weather_26">多雲</string>
+    <string name="weather_27">多雲</string>
+    <string name="weather_28">晴間多雲</string>
+    <string name="weather_29">晴間多雲</string>
+    <string name="weather_30">晴空</string>
+    <string name="weather_31">晴朗</string>
+    <string name="weather_32">晴天</string>
+    <string name="weather_33">晴天</string>
+    <string name="weather_34">雨加冰雹</string>
+    <string name="weather_35">炎熱</string>
+    <string name="weather_36">局部雷雨</string>
+    <string name="weather_37">零星雷雨</string>
+    <string name="weather_38">零星陣雨</string>
+    <string name="weather_39">大雪</string>
+    <string name="weather_40">零星陣雪</string>
+    <string name="weather_41">晴間多雲</string>
+    <string name="weather_42">雷雨</string>
+    <string name="weather_43">陣雪</string>
+    <string name="weather_44">局部雷雨</string>
+</resources>

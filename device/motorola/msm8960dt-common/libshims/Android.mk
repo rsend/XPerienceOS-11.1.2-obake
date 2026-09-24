@@ -1,0 +1,118 @@
+LOCAL_PATH := $(call my-dir)
+
+# liblog
+include $(CLEAR_VARS)
+LOCAL_SRC_FILES := \
+    moto_log.c
+LOCAL_MODULE := libshim_log
+LOCAL_MODULE_TAGS := optional
+include $(BUILD_SHARED_LIBRARY)
+
+# libmdmcutback
+include $(CLEAR_VARS)
+LOCAL_SRC_FILES := \
+    moto_mdmcutback.c
+LOCAL_MODULE := libshim_mdmcutback
+LOCAL_MODULE_TAGS := optional
+include $(BUILD_SHARED_LIBRARY)
+
+# libqc-opt
+include $(CLEAR_VARS)
+LOCAL_SRC_FILES := \
+    icu53.c
+LOCAL_SHARED_LIBRARIES := libicuuc libicui18n
+LOCAL_MODULE := libshim_qcopt
+LOCAL_MODULE_TAGS := optional
+include $(BUILD_SHARED_LIBRARY)
+
+# libril
+include $(CLEAR_VARS)
+LOCAL_SRC_FILES := \
+    moto_ril.c
+LOCAL_SHARED_LIBRARIES := libbinder
+LOCAL_MODULE := libshim_ril
+LOCAL_MODULE_TAGS := optional
+include $(BUILD_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
+LOCAL_SRC_FILES := thermal.c
+LOCAL_MODULE := libshims_thermal
+LOCAL_MODULE_TAGS := optional
+include $(BUILD_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
+LOCAL_SRC_FILES := GraphicBuffer.cpp
+LOCAL_MODULE := libshims_graphicbuffer
+LOCAL_MODULE_TAGS := optional
+include $(BUILD_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
+LOCAL_SRC_FILES := \
+    sensorlistener/ISensorServer.cpp \
+    sensorlistener/SensorManager.cpp
+LOCAL_MODULE := libshim_sensorlistener
+LOCAL_MODULE_TAGS := optional
+LOCAL_SHARED_LIBRARIES := \
+    libnativeloader \
+    libbinder \
+    libcutils \
+    libEGL \
+    libGLESv2 \
+    libsync \
+    libui \
+    libutils \
+    liblog \
+    libbase \
+    libgui
+include $(BUILD_SHARED_LIBRARY)
+
+# Legacy SensorManager ABI used by Motorola's msm8960dt camera blobs.
+include $(CLEAR_VARS)
+LOCAL_SRC_FILES := sensorlistener_legacy.cpp
+LOCAL_SHARED_LIBRARIES := \
+    libdl \
+    libgui \
+    liblog \
+    libutils
+LOCAL_MODULE := libshim_sensorlistener_legacy
+LOCAL_MODULE_TAGS := optional
+LOCAL_32_BIT_ONLY := true
+include $(BUILD_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
+LOCAL_SRC_FILES := frameproc.cpp
+LOCAL_MODULE := libframeproc_shim
+LOCAL_MODULE_TAGS := optional
+include $(BUILD_SHARED_LIBRARY)
+
+# Legacy OpenSSL entry points required by the proprietary IMS RTP stack.
+# OpenSSL historically exposed these as aliases of the corresponding _ex
+# functions; BoringSSL retains the _ex ABI but no longer exports the aliases.
+include $(CLEAR_VARS)
+LOCAL_SRC_FILES := ims_openssl_legacy.c
+LOCAL_SHARED_LIBRARIES := libcrypto
+LOCAL_MODULE := libshim_ims_openssl_legacy
+LOCAL_MODULE_TAGS := optional
+LOCAL_32_BIT_ONLY := true
+include $(BUILD_SHARED_LIBRARY)
+
+
+include $(CLEAR_VARS)
+LOCAL_SRC_FILES := \
+    bionic/bionic_time_conversions.cpp \
+    bionic/pthread_cond.cpp
+LOCAL_SHARED_LIBRARIES := libc
+LOCAL_MODULE := libshimbc_camera
+LOCAL_MODULE_TAGS := optional
+include $(BUILD_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
+LOCAL_SRC_FILES := \
+    android/sensor.cpp \
+    gui/SensorManager.cpp
+
+LOCAL_C_INCLUDES := gui
+LOCAL_SHARED_LIBRARIES := libgui libutils liblog libbinder libandroid
+LOCAL_MODULE := libshim_camera
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+include $(BUILD_SHARED_LIBRARY)

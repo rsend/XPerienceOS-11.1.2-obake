@@ -1,0 +1,143 @@
+# Legacy Qualcomm IMS daemon chain.
+#
+# imsqmidaemon initializes the modem-facing IMS QMI services and publishes
+# sys.ims.QMI_DAEMON_STATUS.  That starts the IMS data daemon, whose status in
+# turn starts the RTP/media daemon.  The sockets must be created by init; these
+# binaries cannot be launched correctly as ordinary background processes.
+
+# Clark's API-24 IMS client uses the multi-SIM socket name for subscription 0,
+# while obake's RIL exposes the unsuffixed endpoint. The obake_legacy profile
+# also bridges the proven call-list and Enhanced4G/QIPCALL boundaries.
+# Pass-through/legacy_alias remain explicit rollback modes.
+service ims_compatd /system/bin/ims_compatd
+    class main
+    # Both Qualcomm IMS endpoints are owned by radio. Running with the same
+    # identity avoids relying on root DAC bypass and remains least-privilege.
+    user radio
+    # The isolated QIPCALL worker uses the matching QMI stack/libdiag.
+    group radio system diag qcom_diag
+    disabled
+
+# Independent NAS startup guard + read-only IMSA readiness. The existing
+# ims_compatd worker remains the only automatic QIPCALL writer. Start at QMUX
+# availability; neither this nor early policy waits for a framework IMS socket.
+service ims_lte_guard /system/bin/ims_lte_guard
+    class main
+    user radio
+    group radio system diag qcom_diag
+    setenv LD_LIBRARY_PATH /system/lib/radio-su6-73:/system/lib:/system/vendor/lib
+    setenv LD_PRELOAD /system/lib/libshim_log.so
+    disabled
+    onrestart setprop sys.ims.voice.ready 0
+    onrestart setprop sys.ims.voice.status source_restarting
+
+on property:init.svc.qmuxd=running && property:persist.ims.compat.mode=obake_legacy && property:persist.ims.compat.startup=1
+    start ims_lte_guard
+
+on property:init.svc.ims_lte_guard=stopped
+    setprop sys.ims.voice.ready 0
+    setprop sys.ims.voice.status source_stopped
+
+on property:init.svc.ims_lte_guard=restarting
+    setprop sys.ims.voice.ready 0
+    setprop sys.ims.voice.status source_restarting
+
+on property:init.svc.ril-daemon=running && property:persist.ims.compat.mode=passthrough
+    stop ims_compatd
+    rm /dev/socket/qmux_radio/rild_ims0
+    setprop sys.ims.compat.status starting
+    start ims_compatd
+
+# The Step 3 profile uses the same bounded relay but enables only protocol
+# mappings proven against the SU6-7.3 stock IMS definitions.
+on property:init.svc.ril-daemon=running && property:persist.ims.compat.mode=obake_legacy
+    stop ims_compatd
+    rm /dev/socket/qmux_radio/rild_ims0
+    setprop sys.ims.compat.status starting
+    start ims_compatd
+
+# Runtime rollback. A reboot after changing the property gives the IMS client
+# a clean reconnect, but this combined property trigger also handles a mode
+# change safely while rild is running.
+on property:init.svc.ril-daemon=running && property:persist.ims.compat.mode=legacy_alias
+    stop ims_compatd
+    rm /dev/socket/qmux_radio/rild_ims0
+    symlink /dev/socket/qmux_radio/rild_ims /dev/socket/qmux_radio/rild_ims0
+    setprop sys.ims.compat.status legacy_alias
+
+service imsqmidaemon /system/bin/imsqmidaemon
+    class main
+    user system
+    socket ims_qmid stream 0660 system radio
+    # Preserve the stock IMS identities. This tree defines AID_IMS as 3015 but
+    # omits its symbolic name from android_ids[], so use the numeric ID here.
+    # qcom_diag (2950) is distinct from Android's legacy diag group (2002), and
+    # /dev/diag is owned by qcom_diag.
+    group 3015 radio net_raw log diag qcom_diag
+    # Keep IMS on the same proven SU6-7.3 QMI dependency closure as rild.
+    setenv LD_LIBRARY_PATH /system/lib/radio-su6-73:/system/lib:/system/vendor/lib
+
+service imsdatadaemon /system/bin/imsdatadaemon
+    class main
+    # Stock starts as root so DSI can configure the IMS interface, then the
+    # daemon drops itself to system after privileged initialization.
+    user root
+    socket ims_datad stream 0660 system radio
+    # DSI configures the IMS interface/routes; these legacy Android network
+    # GIDs authorize the operations without making the blob a secure binary.
+    group 3015 system wifi radio inet net_admin net_raw log diag qcom_diag
+    setenv LD_LIBRARY_PATH /system/lib/radio-su6-73:/system/lib:/system/vendor/lib
+    # libqmi_cci uses the pre-Nougat __android_log_loggable symbol.
+    setenv LD_PRELOAD libshim_log.so
+    disabled
+
+on property:sys.ims.QMI_DAEMON_STATUS=1
+    start imsdatadaemon
+
+# Native replacement for the KitKat RCSBootstraputil Dalvik bridge. It keeps
+# the exact stock DPL lifecycle alive while the preload repairs the legacy
+# link-local scope and installs the missing per-interface policy rule. The
+# persistent property is a rollback switch for this experimental integration.
+service ims_dpl_boot /system/bin/ims_dpl_bootstrapd serve
+    class main
+    user root
+    group 3015 system radio inet net_admin net_raw log diag qcom_diag
+    socket ims_service_state seqpacket 0660 root radio
+    setenv LD_LIBRARY_PATH /system/lib/radio-su6-73:/system/lib:/system/vendor/lib
+    setenv LD_PRELOAD /system/lib/libims_dpl_trace.so:/system/lib/libshim_ims_openssl_legacy.so
+    disabled
+
+on property:sys.ims.DATA_DAEMON_STATUS=1 && property:persist.ims.dpl.bootstrap=1
+    setprop sys.ims.dpl.status starting
+    start ims_dpl_boot
+
+# Runtime rollback and lifecycle cleanup. Priority 13900 is reserved solely by
+# this device integration, so deleting it cannot remove a netd-owned rule.
+on property:persist.ims.dpl.bootstrap=0
+    stop ims_dpl_boot
+    exec - root net_admin -- /system/bin/ims_dpl_bootstrapd cleanup
+    setprop sys.ims.dpl.status disabled
+
+on property:sys.ims.DATA_DAEMON_STATUS=0
+    stop ims_dpl_boot
+    exec - root net_admin -- /system/bin/ims_dpl_bootstrapd cleanup
+    setprop sys.ims.dpl.status waiting_for_data
+
+# Never leave a stale positive readiness property or route after an unexpected
+# process exit. Init will apply its normal restart policy after this cleanup.
+on property:init.svc.ims_dpl_boot=stopped
+    exec - root net_admin -- /system/bin/ims_dpl_bootstrapd cleanup
+    setprop sys.ims.dpl.status stopped
+
+service ims_rtp_daemon /system/bin/ims_rtp_daemon
+    class main
+    user system
+    socket ims_rtpd stream 0660 system radio
+    # RTP also uses the Qualcomm QMI IPC-router client libraries.
+    group 3015 radio diag qcom_diag inet net_raw log
+    setenv LD_LIBRARY_PATH /system/lib/radio-su6-73:/system/lib:/system/vendor/lib
+    setenv LD_PRELOAD libshim_ims_openssl_legacy.so
+    disabled
+
+on property:sys.ims.DATA_DAEMON_STATUS=1
+    start ims_rtp_daemon

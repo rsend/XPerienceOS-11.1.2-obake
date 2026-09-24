@@ -49,10 +49,10 @@ for entry in "${projects[@]}"; do
         mkdir -p "$(dirname "$destination")"
         mv "$work_dir/files" "$destination"
     ); then
-        rm -r -- "$work_dir"
+        rm -rf -- "$work_dir"
         echo "Failed to install pinned prebuilt project: $path ($revision)" >&2
         exit 1
     fi
-    rm -r -- "$work_dir"
+    rm -rf -- "$work_dir"
     echo "Installed $path at $revision"
 done

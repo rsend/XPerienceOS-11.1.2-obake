@@ -19,7 +19,7 @@ current validation status.
 
 ```sh
 source ./setup_env.sh rom
-./jack.sh 3
+./jack.sh 6
 make -j6 systemimage bootimage
 
 source ./setup_env.sh recovery

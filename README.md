@@ -4,6 +4,8 @@ This is a heavily AI-assisted port of Android 7 for the Droid Mini (XT1080) that
 
 For reference, the last known working build I'm aware of was LineageOS 13 (Android 6): https://xdaforums.com/t/rom-unofficial-lineage-os-13-for-obake-22-2-17.3319958/
 
+There was an effort to make this exact version work, but as far as I can tell the maintainer disappeared and it didn't quite work right: https://xdaforums.com/t/oms7-nougat-7-1-2-obake-xperience-11-1-2_r29-nightly.3681850/
+
 AI tools are now useful enough that such efforts are more easily doable, especially for those of us who might have a niche interest but not the specific skills. I'm aware of the different opinions about using AI tools for such things over really studying the depths of how everything works; but it's my belief that if the tools allows us to accomplish projects that would otherwise remain undone that's a good enough tradeoff for me.
 I welcome discussions and input on this point, however.
 

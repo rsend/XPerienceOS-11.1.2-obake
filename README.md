@@ -29,7 +29,7 @@ What is it and works?
 - VoLTE (!)
 - Bluetooth
 - Wifi
-- Camera: Sort of. It works with the stock camera app but OpenCamera crashes. Since this is not actual ROM I want to use I fixed it in Android 8 instead.
+- Camera: No. I fixed it in Android 8 instead.
 
 Note: The device used to NOT have VoLTE enabled since 2G and 3G were acceptable telephone fallbacks at the time. Since we no longer really have 3G, VoLTE is mandatory and necessary for all future ports. 
 Getting this to work took a lot of time and effort. It's also tied to a specific version of the modem binaries (SU6-7.3) which are NOT the latest; they are included here. See instructions at the end.

@@ -13,13 +13,14 @@ I recently dug up my old phone and decided it might fun to try and port "newer" 
 
 According to some analysis, this hardware is technically only blocked at Android 15 (!!!) because 64-bits becomes mandatory at that point. So my goal is to see how far I can take it, and this port is a stepping stone to later versions. 
 
-So, what works?
+What is it and works?
 
 - XperienceOS 11.2.1 based on Android 7
 - SELinux enforcing
-- Rootable with TWRP 3.1.1 recovery, see instructions below
+- Recovery using TWRP 3.1.1
 - Play Services SHOULD work, according to Google the hard minimum IS Android 7
 - F-Droid / Aurora Store work great as well
+- SuperSU using Chainfire's SuperSU 2.8.2-SR5 ZIP; included here
 
 - Charging LED fixed
 - Sound routing (Earpiece / Speaker / Headphones)
@@ -28,51 +29,73 @@ So, what works?
 - Wifi
 
 Note: The device used to NOT have VoLTE enabled since 2G and 3G were acceptable telephone fallbacks at the time. Since we no longer really have 3G, VoLTE is mandatory and necessary for all future ports. 
-Getting this to work took a lot of time and effort.
+Getting this to work took a lot of time and effort. It's also tied to a specific version of the modem binaries (SU6-7.3) which are NOT the latest; they are included here. See instructions at the end.
 
 How do you get it?
 
 This directory is a standalone copy of the XPerienceOS source checkout that has been heavily modified to build for OBAKE. There was ALMOST a version of this for the GHOST platform which is very similar, so I started with that and tweaked it until most things worked.
 
+It produces three images: system.img, boot.img and recovery.img
+
 It builds on Ubuntu 20.04 and the project is optimized for simplicity. All code and tools are included; only two setup scripts are needed. Build sequence:
 
 - Install a fresh Ubuntu 20.04 VM
+
   - 100GB disk (smaller may be ok, didn't try)
   - 16GB of RAM (8GB may work)
+  - As many CPUs as you can spare, note the number (N)
 
+- Checkout / clone this repository
 
+ On your fresh Ubuntu installation, run as regular user:
 
-All three image targets built successfully from this staged tree using
-locally installed pinned prebuilts, before the final test-material scrub. The
-upload candidate still needs a build from a fresh Ubuntu installation using
-`install_deps.sh`. Build outputs, Repo
-metadata, investigation artifacts, and unrelated stock firmware archives
-belong outside it. The optional radio pair and SuperSU ZIP live under
-`MANUAL-FLASH/` and are not build inputs.
+`bash ./install_deps.sh`
 
-On a fresh Ubuntu 20.04 amd64 host, run `bash ./install_deps.sh` as your
-regular user. It installs Ubuntu packages, downloads exact pinned historical
+This installs Ubuntu packages, downloads exact pinned historical
 prebuilt build inputs, and builds the in-tree Bison 2.7 host tool. It invokes
-sudo only for Ubuntu packages. It does not fetch ROM or device source projects.
-Then use a Bash shell in this directory. See
-[BUILD_ENVIRONMENT.md](BUILD_ENVIRONMENT.md) for the toolchain inventory and
-current validation status.
-
-```sh
-source ./setup_env.sh rom
-./jack.sh 6
-make -j6 systemimage bootimage
-
-source ./setup_env.sh recovery
-make -j6 recoveryimage
-```
+sudo only for Ubuntu packages. It does not fetch ROM or device source projects. See [BUILD_ENVIRONMENT.md](BUILD_ENVIRONMENT.md) for the toolchain inventory.
 
 `m` may be used instead of `make` after sourcing the setup script. The two
 output directories are deliberately separate: ROM images are `user` and
 enforcing; TWRP 3.1.1 recovery is `userdebug` and contains no SuperSU.
 The setup script derives all paths from its own location, so the tree may be
-cloned anywhere. It does not fetch source or install host packages.
+cloned anywhere. 
 
-The Ubuntu 20.04 setup guide is included, but its fresh-host installation
-still needs an end-to-end test. This release tree's `lunch` has been changed to
-reject missing products locally; it no longer invokes upstream roomservice.
+If you are building the system image and boot image, set up the environment and build: 
+
+```sh
+source ./setup_env.sh rom
+./jack.sh 6
+make -jN systemimage bootimage
+```
+
+NOTE1: N is the number of CPU you assigned above, so use -j8 below if your VM has 8 CPUs and so forth.
+
+NOTE2: "6" in the jack.sh line is heap size in GB. It must be smaller than your RAM with room to spare; I tried 6 GB heap with 8GB of RAM and it works, but 3GB heap is too little and throws an error.
+
+If you are building `recovery.img`, run: 
+
+```
+source ./setup_env.sh recovery
+make -jN recoveryimage
+```
+
+Output directories are separate as above:
+- ROM and boot image will be in
+- Recovery image will be in
+
+All three of these can be flashed via fastboot the usual way:
+
+- fastboot flash boot boot.img
+- fastboot flash system system.img
+
+YOU MUST ALSO FLASH THE SPECIFIC RADIO BINARIES from the MANUAL_FLASH directory:
+
+- fastboot flash modem NON-HLOS.bin
+- fastboot flash fsg fsg.mbn
+- fastboot erase modemst1
+- fastboot erase modemst2
+
+If you want root, flash the included SuperSU-v2.82-SR5.zip through TWRP. This should also install the SuperSU app in userspace.
+
+

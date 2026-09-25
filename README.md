@@ -41,6 +41,11 @@ This directory is a standalone copy of the XPerienceOS source checkout that has 
 
 It produces three images: system.img, boot.img and recovery.img
 
+The kernel source comes from the XPerience Motorola Ghost kernel project,
+with obake-specific modifications. See [KERNEL_SOURCE.md](KERNEL_SOURCE.md)
+for its exact upstream revision, contributor credit, local-change record,
+GPLv2 license, and corresponding-source location.
+
 It builds on Ubuntu 20.04 and the project is optimized for simplicity. All code and tools are included; only two setup scripts are needed. Build sequence:
 
 - Install a fresh Ubuntu 20.04 VM
@@ -99,5 +104,4 @@ YOU MUST ALSO FLASH THE SPECIFIC RADIO BINARIES from the MANUAL_FLASH directory:
 - fastboot erase modemst2
 
 If you want root, flash the included SuperSU-v2.82-SR5.zip through TWRP. This should also install the SuperSU app in userspace.
-
 

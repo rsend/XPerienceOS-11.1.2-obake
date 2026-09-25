@@ -1,4 +1,14 @@
-# Droid Mini source-release staging tree
+XPerienceOS 11.1.2 for Droid Mini (obake)
+
+This is a heavily AI-assisted port of Android 7 for the Droid Mini (XT1080). 
+
+Why? Why not!
+
+I recently dug up my old phone and decided it might fun to try and port "newer" Android versions - just for the challenge. AI tools are now useful enough that such efforts are more easily doable, especially for those of us who might have a niche interest but not the specific skills.  
+
+For reference, the last known working build I'm aware of was LineageOS 13 (Android 6): https://xdaforums.com/t/rom-unofficial-lineage-os-13-for-obake-22-2-17.3319958/
+
+
 
 This directory is a standalone copy of the XPerienceOS source checkout.
 All three image targets built successfully from this staged tree using

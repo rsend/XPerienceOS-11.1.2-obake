@@ -1869,20 +1869,17 @@ function getLangPref() {
 
   function customSearch(query, start) {
     var searchParams = {
-      // Keys for SAC
-      cx:'',
-      key: '',
-
-      // Keys for DAC
-      // cx: '',
-      // key: '',
-
+      cx: window.DOCS_SEARCH_CX || '',
+      key: window.DOCS_SEARCH_API_KEY || '',
       q: query,
       start: start || 1,
       num: 6,
       hl: getSearchLang(),
       fields: 'queries,items(pagemap,link,title,htmlSnippet,formattedUrl)'
     };
+
+    if (!searchParams.cx || !searchParams.key)
+      return $.Deferred().reject().promise();
 
     return $.get('https://content.googleapis.com/customsearch/v1?' +  $.param(searchParams));
   }
@@ -1942,6 +1939,8 @@ function getLangPref() {
     customSearch(query, start).then(function(results) {
       loadMoreButton.remove();
       renderResults(el, results);
+    }).fail(function() {
+      loadMoreButton.text('Search unavailable');
     });
   }
 
@@ -1951,6 +1950,8 @@ function getLangPref() {
     customSearch(query).then(function(results) {
       el.empty();
       renderResults(el, results);
+    }).fail(function() {
+      el.empty().append($('<div>').text('Online search is unavailable.'));
     });
   };
 })(jQuery);

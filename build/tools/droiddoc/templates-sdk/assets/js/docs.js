@@ -2108,7 +2108,7 @@ function showSamples() {
 
   // Blogger API info
   var apiUrl = 'https://www.googleapis.com/blogger/v3';
-  var apiKey = '';
+  var apiKey = window.DOCS_BLOGGER_API_KEY || '';
 
   // Blog IDs can be found in the markup of the blog posts
   var blogs = {
@@ -2217,6 +2217,11 @@ function showSamples() {
 
       // Check if we have information about the blog
       if (!blogs[blogName]) {
+        return;
+      }
+
+      // Let the browser open the blog directly when preview is not configured.
+      if (!apiKey) {
         return;
       }
 
@@ -5476,17 +5481,17 @@ window.metadata.search = (function() {
 
   function customSearch(query, start) {
     var searchParams = {
-      // current cse instance:
-      //cx: '',
-      // new cse instance:
-      cx: '',
-      key: '',
+      cx: window.DOCS_SEARCH_CX || '',
+      key: window.DOCS_SEARCH_API_KEY || '',
       q: query,
       start: start || 1,
       num: 9,
       hl: getSearchLang(),
       fields: 'queries,items(pagemap,link,title,htmlSnippet,formattedUrl)'
     };
+
+    if (!searchParams.cx || !searchParams.key)
+      return $.Deferred().reject().promise();
 
     return $.get('https://content.googleapis.com/customsearch/v1?' +  $.param(searchParams));
   }
@@ -5555,6 +5560,8 @@ window.metadata.search = (function() {
     customSearch(query, start).then(function(results) {
       loadMoreButton.remove();
       renderResults(el, results, searchAppliance);
+    }).fail(function() {
+      loadMoreButton.text('Search unavailable');
     });
   }
 
@@ -5564,6 +5571,8 @@ window.metadata.search = (function() {
     customSearch(query).then(function(results) {
       el.empty();
       renderResults(el, results, searchAppliance);
+    }).fail(function() {
+      el.empty().append($('<div>').text('Online search is unavailable.'));
     });
   };
 })(jQuery);

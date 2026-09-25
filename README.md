@@ -47,7 +47,7 @@ It builds on Ubuntu 20.04 and the project is optimized for simplicity. All code 
 
   - 100GB disk (smaller may be ok, didn't try)
   - 16GB of RAM (8GB may work)
-  - As many CPUs as you can spare, note the number (N)
+  - At least 4 CPUs
 
 - Checkout / clone this repository
 
@@ -70,10 +70,8 @@ If you are building the system image and boot image, set up the environment and 
 ```sh
 source ./setup_env.sh rom
 ./jack.sh 6
-make -jN systemimage bootimage
+make -j4 systemimage bootimage
 ```
-
-NOTE1: N is the number of CPU you assigned above, so use -j8 below if your VM has 8 CPUs and so forth.
 
 NOTE2: "6" in the jack.sh line is heap size in GB. It must be smaller than your RAM with room to spare; I tried 6 GB heap with 8GB of RAM and it works, but 3GB heap is too little and throws an error.
 
